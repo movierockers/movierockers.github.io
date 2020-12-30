@@ -1,0 +1,37 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+<link rel="self" href="https://star.isaiminiweb.online/video-feed.xml"/>
+<id>Starisai</id>
+<title>Starisai</title>
+<link rel="alternate" href="https://star.isaiminiweb.online"/>
+ <author>
+  <name>Tentrockers</name>
+  <uri>https://tentrockers.github.io</uri>
+ </author>
+ <published>{{ site.time | date_to_rfc822 }}</published>
+ {% for post in site.posts limit:100 %}
+ <entry>
+  <title>{{ post.title | xml_escape }}</title>
+  <link rel="alternate" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"/>
+  <author>
+   <name>Tentrockers</name>
+   <uri>https://tentrockers.github.io</uri>
+  </author>
+  <published>{{ site.time | date_to_rfc822 }}</published>
+  <updated>{{ site.time | date_to_rfc822 }}</updated>
+  <media:group>
+   <media:title>{{ post.title | xml_escape }}</media:title>
+   <media:content url="{{ post.video | xml_escape }}" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="{{ post.poster | xml_escape }}" width="480" height="360"/>
+   <media:description>{{ post.title | xml_escape }}</media:description>
+   <media:community>
+    <media:starRating count="697254" average="5.00" min="1" max="5"/>
+    <media:statistics views="3456366"/>
+   </media:community>
+  </media:group>
+ </entry>
+     {% endfor %}
+</feed>
