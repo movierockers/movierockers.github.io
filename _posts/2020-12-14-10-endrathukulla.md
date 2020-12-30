@@ -7,7 +7,7 @@ language: Tamil
 quality: HD
 category: "{{slug}}"
 size: 500 MB
-video: https://files.isaiminiweb.online/Tamil%2520Movies/2015/10%2520Endrathukulla%2520(2015)?rootId=0AHf2pL07ONScUk9PVA
+video: https://drive.softpedia.workers.dev/Tamil%2520Movies/2015/10%2520Endrathukulla%2520(2015)?rootId=0AHf2pL07ONScUk9PVA
 poster: https://madaboutmoviez.files.wordpress.com/2015/10/10-endrathukulla.jpg
 paginate: false
 ---
