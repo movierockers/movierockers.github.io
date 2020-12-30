@@ -16,7 +16,7 @@ paginate_path: /page/:num/
 sass:
   style: compressed
 markdown: kramdown
-url: https://www.isaiminiweb.online
+url: https://star.isaiminiweb.online
 facebook_username: facebook_username
 sent_message_url: /contact/message-sent/
 paginate_content:
@@ -70,7 +70,7 @@ exclude:
 show_get_theme_btn: false
 show_hero: true
 email: youremail@test.com
-baseurl: "/starisai"
+baseurl: ""
 two_columns_layout: true
 menu:
   - title: Tamil Movies 2020
