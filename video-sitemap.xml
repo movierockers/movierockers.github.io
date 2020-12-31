@@ -12,7 +12,7 @@ layout: null
 <video:title>{{ post.title | xml_escape }}</video:title>
 <video:description>{{ post.title | xml_escape }}</video:description>
 <video:duration>104</video:duration>
-<video:publication_date>{{ site.time | date_to_rfc822 }}</video:publication_date>
+<video:publication_date>{{ site.time | date_to_xmlschema }}</video:publication_date>
 <video:category>Movie</video:category>
 <video:requires_subscription>yes</video:requires_subscription>
 <video:live>no</video:live>
