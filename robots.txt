@@ -1,3 +1,6 @@
-# robotstxt.org/
-
 User-agent: *
+Disallow: /author/
+Disallow: /category/
+
+Sitemap: https://star.isaiminiweb.online/video-sitemap.xml
+Sitemap: https://star.isaiminiweb.online/video-feed.xml
