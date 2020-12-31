@@ -11,7 +11,7 @@ layout: null
   <name>Tentrockers</name>
   <uri>https://tentrockers.github.io</uri>
  </author>
- <published>{{ site.time | date_to_rfc822 }}</published>
+ <published>{{ site.time | date_to_xmlschema }}</published>
  {% for post in site.posts limit:100 %}
  <entry>
   <title>{{ post.title | xml_escape }}</title>
@@ -20,8 +20,8 @@ layout: null
    <name>Tentrockers</name>
    <uri>https://tentrockers.github.io</uri>
   </author>
-  <published>{{ site.time | date_to_rfc822 }}</published>
-  <updated>{{ site.time | date_to_rfc822 }}</updated>
+  <published>{{ post.date | date_to_xmlschema }}</published>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
   <media:group>
    <media:title>{{ post.title | xml_escape }}</media:title>
    <media:content url="{{ post.video | xml_escape }}" type="application/x-shockwave-flash" width="640" height="390"/>
