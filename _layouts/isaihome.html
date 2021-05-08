@@ -91,19 +91,19 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 	
 	<div class="line">Downloads</div>
 	
-	{% assign categories_list = site.categories %}
+	     <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+{% assign categories_list = site.categories %}
   {% if categories_list.first[0] == null %}
     {% for category in categories_list %}
-	<div class="f" title="{{ item.title }} movie download tamilrockers"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg==" alt="{{ item.title }} movie download isaimini">
-<a href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}}">{{ item.title }}</a></div>
-	{% endfor %}
+      <li itemprop="name"><a itemprop="url" href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a></li>
+    {% endfor %}
   {% else %}
     {% for category in categories_list %}
-       <div class="f" title="{{ item.title }} movie download tamilrockers"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg==" alt="{{ item.title }} movie download isaimini">
-<a href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}}">{{ item.title }}</a></div>
+      <li itemprop="name"><a itemprop="url" href="{{site.url}}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
     {% endfor %}
   {% endif %}
 {% assign categories_list = nil %}
+</ul>
 
 <div class="bottom" align="center">
 <div class="Adz">
