@@ -10,7 +10,7 @@ use_logo: false
 show_time_bar: false
 instagram_username: instagram_username
 show_modal_on_exit: false
-name: Starisai
+name: Isaimini
 permalink: /:title/
 paginate_path: /page/:num/
 sass:
@@ -73,8 +73,8 @@ email: youremail@test.com
 baseurl: ""
 two_columns_layout: true
 menu:
-  - title: Tamil Movies 2020
-    url: /category/tamil-movies-2020
+  - title: Tamil Movies 2021
+    url: /category/tamil-movies-2021
   - title: Tamil Movies 2019
     url: /category/tamil-movies-2019
   - url: /category/tamil-movies-2018
