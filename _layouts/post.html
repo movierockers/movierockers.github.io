@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html amp>
 <head>
+	    {% assign url = '' %}
+    {% if paginator.page_trail %}
+        {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% else %}
+        {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
+	
 <meta charset="utf-8">
 <meta name="language" content="en-us" />
 <title>{{ page.title }} ({{ page.year }}) Movie Download HD Tamilrockers Moviesda</title>
@@ -10,7 +17,15 @@
 <meta name="rating" content="General" />
 <meta name="robots" content="index, follow" />
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
- 
+ <link rel="canonical" href="{{ url }}" />
+
+	    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:title" content="{{ page.title }} Movie Download Tamilrockers">
+    <meta property="og:image" content="{{ page.poster }}">
+    <meta property="og:description" content="{{ page.title }} movie download hd tamilrockers isaimini {{ page.title }} {{ page.language }} movie download {{ page.quality }} {{ page.year }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+	
    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 	
