@@ -7,7 +7,7 @@ language: Tamil
 quality: HD
 category: Tamil 2016 Dubbed Movies
 size: 500 MB
-video: https://gplinks.co/UgjMAW
-poster: https://image.tmdb.org/t/p/w185/kVrghd3cPnJGQhST2kvvfHVWETz.jpg
+video: https://movierockers.me/2021/www.MovieRockers.Me%20-%20The%20Pursuit%20Of%20Happyness%20(2006)%20BluRay%20TamilDubbed%20Single%20Part.mp4
+poster: https://image.tmdb.org/t/p/w185/lBYOKAMcxIvuk9s9hMuecB9dPBV.jpg
 paginate: false
 ---
