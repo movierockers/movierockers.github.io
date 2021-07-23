@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /author/
-Disallow: /category/
+Allow: /category/
 
-Sitemap: https://star.isaiminiweb.online/video.xml
-Sitemap: https://star.isaiminiweb.online/video-feed.xml
+Sitemap: {{site.url}}/video.xml
+Sitemap: {{site.url}}/feed.xml
