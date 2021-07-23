@@ -9,11 +9,11 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
 			<url>
 			  <loc>{{ site.url }}</loc>
-			  <changefreq>weekly</changefreq>
+			  <changefreq>daily</changefreq>
 			  <priority>1.0</priority>
 			</url>
     
-        {% for post in site.posts limit:30 %}
+        {% for post in site.posts limit:500 %}
 <url>
        <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
         <priority>0.4</priority>
@@ -23,6 +23,7 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <video:description>{{ post.title | xml_escape }}</video:description>
 <video:content_loc>{{ post.video | xml_escape }}</video:content_loc>
 <video:duration>5616</video:duration>
+<video:publication_date>{{ page.date | date_to_xmlschema }}</video:publication_date>
 <video:requires_subscription>yes</video:requires_subscription>
 <video:family_friendly>yes</video:family_friendly>
 <video:player_loc allow_embed="yes" autoplay="ap=1">{{ post.video | xml_escape }}</video:player_loc>
@@ -30,7 +31,7 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <video:live>no</video:live>
 <video:tag></video:tag>
 </video:video>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         </url>
           {% endfor %}
     
