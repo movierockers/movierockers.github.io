@@ -27,7 +27,7 @@ collections:
         hint: "This will be used across the pages and for search engines."
         widget: "string"
       - label: "Featured Image"
-        name: "image"
+        name: "poster"
         widget: "image"
         allow_multiple: false
         required: false
