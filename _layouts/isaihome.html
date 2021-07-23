@@ -83,14 +83,8 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 
 {% for post in paginator.posts %}
 	<div style=" text-transform: capitalize;" class="f">
-	<b>
-		<font color="red">
-		<span class="category">
-			<a href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ post.category }}"> <span>{{ post.category }}</span> </a>
-			</span>
-		</font>
-		</b>
-		<b>{{ post.title }} ({{ post.year }}) [{{ post.quality }}] </b> Latest {{ post.language }} Movie Download HD Movie Mp4 HD <a href="{{ BASE_PATH }}{{ post.url }}"><span style="color: green;">Download Now</span></a>
+	
+<b>{{ post.title }}</b>{{ post.category }} <a href="{{ BASE_PATH }}{{ post.url }}"><span style="color: green;">Read More</span></a>
 		</div>
 {% endfor %}  
 {% include pagination-home.html %}
