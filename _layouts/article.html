@@ -1,0 +1,90 @@
+<!doctype html>
+<html amp>
+<head>
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://google.com/article"
+      },
+      "headline": "{{page.title}}",
+      "image":"{{page.image}}",
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.date | date_to_xmlschema }}",
+      "author": {
+        "@type": "Person",
+        "name": "Rahul"
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "Isaimini",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.isaiminiweb.site/favicon.ico"
+        }
+      }
+    }
+    </script>
+     {% assign url = '' %}
+    {% if paginator.page_trail %}
+        {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% else %}
+        {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
+  <meta charset="utf-8">
+     <title>{{page.title}}</title>
+     <meta name="description" content="{{page.description}}">
+     <meta property="og:url" content="{{ url }}">
+<meta property="og:image" content="{{page.image}}">
+<meta property="og:description" content="{{page.description}}">
+<meta property="og:type" content="article">
+
+     <meta name="google" content="notranslate" />
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="copyrightYear" content="{{ 'now' | date: "%Y" }}">
+<link href="{{ url }}" rel="canonical" />
+<meta name="robots" content="index,follow">
+<meta name="audience" content="all">
+<meta name="theme-color" content="#0085ef">
+<meta name="msapplication-TileColor" content="#0085ef">
+<meta name="mobile-web-app-capable" content="yes">
+     
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+       <style amp-custom>
+     .line {
+    background-color: #308bcf;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0px;
+    font-size: small;
+}
+            main{
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 20px;
+    font-family: sans-serif;
+                 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+     
+<div class="line"><span style=" font-size: medium; font-family: -webkit-pictograph; ">Hotstar</span></div>
+     <main>
+          <h2>{{page.title}}</h2>
+<amp-img src="{{page.image}}" alt="{{page.title}}" class="responsive" width="600" height="400">
+     {{ content }}
+     </main>
+     </body>
+</html>
