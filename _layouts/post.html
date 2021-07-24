@@ -40,6 +40,51 @@
             font-size: 15px
         }
 
+	    .content-card {
+            float: left;
+            width: 48%;
+            margin: 16px 0;
+            background: #fff;
+        }
+
+        .content-card:nth-child(even) {
+            float: right;
+            margin-left: 20px;
+        }
+
+        @media  only screen and (max-width: 550px) {
+
+            .content-card,
+            .content-card:nth-child(even) {
+                float: none;
+                width: 100%;
+                margin: 10px 0;
+            }
+
+        }
+
+        .content-card__image {
+            float: left;
+            width: 100%;
+        }
+
+        .content-card__detail {
+            float: left;
+            padding: 16px;
+            width: 100%;
+            min-height: 110px
+        }
+
+        .content-card__category {
+            font-size: 13px;
+        }
+
+        .content-card__title {
+            color: #333;
+            font-weight: bold;
+            margin-top: 5px;
+            font-size: 15px;
+        }
         .site-header {
             background: #fbff01;
             border-bottom: 1px solid #f3f3f3;
