@@ -923,6 +923,28 @@ font-family: system-ui;
 	</center>
 
 <div class="line"></div>
+
+
+<div class="related-news">
+    <h3>You may also like</h3>
+    <div class="related-news__inner clearfix">
+         
+         {% for post in site.posts limit:10 %}
+         
+         <div class="content-card material-shadow--1dp clearfix">
+            <a href="{{ post.url }}" title="{{ post.title }}">
+                
+                <div class="content-card__detail">
+                                        <div class="content-card__category">{{ post.category }}</div>
+                    <div class="content-card__title">{{ post.title }}</div>
+                </div>
+            </a>
+        </div>
+         
+         {% endfor %}
+        
+    </div>
+</div>
 <h1 class="headline">Tags</h1>
 <div class="tagi">
 <ul>
@@ -968,6 +990,7 @@ font-family: system-ui;
        <li>{{ page.title }} Movie Download kotha movies</li>
       </ul>
 </div>
+	
 
         </div>
         <footer class="amp-footer ">
