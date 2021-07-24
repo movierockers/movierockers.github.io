@@ -201,18 +201,7 @@ border : 1px solid silver;
     cursor: pointer;
 ">Download </button></a>
 	</center>
-	<div class="line">Recent Updates</div>
 	
-	<div>
-		
-		{% for post in site.posts limit:10 %}
-  <div style=" text-transform: capitalize;" class="f">
-	<b>{{ post.title }} ({{ post.year }}) [{{ post.quality }}] </b> Latest {{ post.language }} Movie Download HD Movie Mp4 HD <a href="{{ BASE_PATH }}{{ post.url }}"><span style="color: green;">Download Now</span></a>
-		</div>
-{% endfor %}
-
-
-           </div>
 <div class="line">Tags</div>
 <div style="color:green;">
 	<ul>
