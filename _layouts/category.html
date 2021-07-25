@@ -72,7 +72,7 @@
 	    .content-card {
             float: left;
             width: 100%;
-            margin: 16px 0;
+            margin: 4px 0;
             background: #fff;
         }
 
@@ -101,7 +101,6 @@
             float: left;
             padding: 16px;
             width: 100%;
-            min-height: 110px
         }
 
         .content-card__category {
@@ -943,7 +942,7 @@ font-family: system-ui;
             <a href="{{ post.url }}" title="{{ post.title }}">
                 
                 <div class="content-card__detail">
-                                        <div class="content-card__category">{{ post.category }} - <amp-timeago class="m1" width="160" height="20" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</amp-timeago></div>
+                                        <div class="content-card__category">{{ post.category }} - <amp-timeago style="margin: -4px;margin-left: 4px;" class="m1" width="160" height="20" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</amp-timeago></div>
                     <div class="content-card__title">{{ post.title }}</div>
                 </div>
             </a>
