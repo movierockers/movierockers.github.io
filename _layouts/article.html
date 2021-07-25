@@ -947,10 +947,10 @@
     </noscript>
 
     <script type="application/ld+json">
-        {"@context":"http:\/\/schema.org\/","@type":"organization","@id":"#organization","logo":{"@type":"ImageObject","url":"https://buzzy.akbilisim.com/assets/images/logo.png"},"url":"https://buzzy.akbilisim.com","name":"Buzzy","description":"Buzzy demo site example meta description"}
+        {"@context":"http:\/\/schema.org\/","@type":"organization","@id":"#organization","logo":{"@type":"ImageObject","url":"{{ site.url }}/logo.png"},"url":"{{ site.url }}","name":"{{ site.name }}","description":"{{ site.name }}"}
     </script>
     <script type="application/ld+json">
-        {"@context":"http:\/\/schema.org\/","@type":"WebSite","name":"Buzzy","alternateName":"Buzzy Demo","url":"https://buzzy.akbilisim.com"}
+        {"@context":"http:\/\/schema.org\/","@type":"WebSite","name":"{{ site.name }}","alternateName":"{{ site.name }}","url":"{{ site.irl }}"}
     </script>
 
     <title>{{ page.title }} - {{ site.name }}</title>
