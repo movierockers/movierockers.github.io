@@ -1,5 +1,5 @@
 ---
-date: 2021-07-25 11:29:33
+date: 2021-07-25 11:30:48
 layout: article
 title: Game of Thrones Season 1 Episodes is Now Available in Tamil Language
 description: Nine noble families wage war against each other in order to gain
@@ -31,3 +31,7 @@ The Lannisters press their advantage over the Starks; Robb rallies his father's 
 Robb goes to war against the Lannisters. Jon finds himself struggling on deciding if his place is with Robb or the Night's Watch. Drogo has fallen ill from a fresh battle wound. Daenerys is desperate to save him.
 
 Robb vows to get revenge on the Lannisters. Jon must officially decide if his place is with Robb or the Night's Watch. Daenerys says her final goodbye to Drogo.
+
+## Download in Tamil
+
+[Click Here To Go to Download Page](https://www.isaiminiweb.site/game-of-thrones/)
