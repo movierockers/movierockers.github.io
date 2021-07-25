@@ -932,7 +932,7 @@ font-family: system-ui;
 	<div class="wrap">
 		
 		<center>
-<h1 class="headline">{{ page.title }}</h1>
+<h1 class="headline" style="padding-bottom: 20px;">{{ page.title }}</h1>
 		</center>
 		 {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
 	    
