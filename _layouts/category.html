@@ -943,7 +943,7 @@ font-family: system-ui;
             <a href="{{ post.url }}" title="{{ post.title }}">
                 
                 <div class="content-card__detail">
-                                        <div class="content-card__category">{{ post.category }} - <amp-timeago class="m1" width="160" height="20">{{ page.date | date_to_xmlschema }}</amp-timeago></div>
+                                        <div class="content-card__category">{{ post.category }} - <amp-timeago class="m1" width="160" height="20" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_xmlschema }}</amp-timeago></div>
                     <div class="content-card__title">{{ post.title }}</div>
                 </div>
             </a>
