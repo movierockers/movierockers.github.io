@@ -987,7 +987,7 @@
         </header>
         <div class="wrap">
             <div itemscope itemtype="https://schema.org/NewsArticle">
-    <meta itemprop="mainEntityOfPage" content="{{ page.url }}">
+    <meta itemprop="mainEntityOfPage" content="{{ url }}">
     <h1 itemprop="headline" class="headline">{{ page.title }}</h1>
     <meta itemprop="inLanguage" content="en_US" />
     <meta itemprop="genre" content="news" name="medium" />
@@ -1014,7 +1014,7 @@
     </div>
 
     <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="news-img">
-        <amp-img src="{{ page.image }}" alt="{{ page.title }}" width="728"
+        <amp-img src="{{ page.poster }}" alt="{{ page.title }}" width="728"
             height="410" layout="responsive"></amp-img>
         <meta itemprop="url" content="{{ page.image }}" />
         <meta itemprop="width" content="728" />
