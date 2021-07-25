@@ -10,13 +10,13 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 			<url>
 			  <loc>{{ site.url }}</loc>
 			  <changefreq>daily</changefreq>
-			  <priority>1.0</priority>
+			  <priority>10.0</priority>
 			</url>
     
         {% for post in site.posts limit:500 %}
 <url>
        <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
-        <priority>0.4</priority>
+        <priority>0.8</priority>
 <video:video>
 <video:thumbnail_loc>{{ post.poster | xml_escape }}</video:thumbnail_loc> 
 <video:title>{{ post.title | xml_escape }}</video:title>
