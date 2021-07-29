@@ -1,0 +1,151 @@
+<html>
+<head>
+		<meta http-equiv="refresh" content="5;URL=//luvaihoo.com/afu.php?zoneid=3785595">
+
+  {% assign title = '' %}
+    {% if page.layout == 'author' %}
+        {% assign title = page.display_name %}
+    {% elsif page.title %}
+        {% assign title = page.title | append: " | " | append: site.name %}
+    {% else %}
+        {% assign title = site.title %}
+    {% endif %}
+
+    {% assign image = '' %}
+    {% if page.image %}
+        {% assign image = page.image %}
+    {% else %}
+        {% assign image = "data:image/png;base64,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" %}
+    {% endif %}
+
+    {% assign description = '' %}
+    {% if page.description %}
+        {% assign description = page.description | strip_html | strip_newlines | truncate: 160 %}
+    {% else %}
+        {% assign description = site.description %}
+    {% endif %}
+
+    {% assign url = '' %}
+    {% if paginator.page_trail %}
+        {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% else %}
+        {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
+  
+<meta name="language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{{ page.title }} Torrent and Magnet Download</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="{{ page.title }} torrent Download tamilrockers torrent {{ page.title }} HD Movie Download {{ page.title }} Movie HD Download {{ page.title }} magnet link Download Moviesda.in {{ page.title }} Full Movie 1080p HD & 720 HD TamilRockers TamilGun Download Full HD Movie isaimini Download {{ page.title }} Mp4 HD Movie Download {{ page.title }} Movies Collection isaidub Full Movie Download {{ page.title }} Movies Collection Full Movie Download {{ page.title }} Movies Collection Movie Moviesda Download isaimini" />
+  
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta property="twitter:image:src" content="{{ image }}">
+    {% if site.twitter_username %}
+        <meta name="twitter:site" content="@{{ site.twitter_username }}">
+    {% endif %}
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:image" content="{{ image }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="{{ site.name }}">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="msapplication-square70x70logo" content="smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="widetile.png" />
+    <meta name="msapplication-square310x310logo" content="largetile.png" />
+    
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="#141414">
+    <link rel="canonical" href="{{ url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/isai.css' | prepend: site.baseurl }}">
+  </head>
+<body>
+  <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3744336,document.body||document.documentElement)</script>
+<div class="line">
+        <font size="4px">{{ site.name }}</font><br/><small>Name Of Quality</small></div> 
+  {% include sbox.html %}
+   <div class="line">Torrent Information</div>
+
+  <div class="isai" align="left">
+    <div class="pr">
+
+     <table cellspacing="5">
+
+<tbody><tr><td><b>Name</b></td><td><b>:</b></td><td>{{ page.title }}</td></tr>
+
+<tr><td><b>Size</b></td><td><b>:</b></td><td>{{ page.size }}</td></tr>
+
+<tr><td><b>Category</b></td><td><b>:</b></td><td>{{ page.type }}</td></tr>
+
+<tr><td><b>Updated on</b></td><td><b>:</b></td><td>{{ page.date }}</td></tr>
+
+  
+</tbody></table></div></div>
+ <div class="line">Download</div>
+  
+<div class="f" title="{{ page.title }}"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg==" alt="{{ page.title }}"> 
+<a href="{{ page.torrent }}">Download Torrent File {{ page.isaisize }}</a></div>
+  
+  <div class="f" title="{{ page.title }}"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg==" alt="{{ page.title }}"> 
+<a href="{{ page.magnet }}">Download Magnet</a></div>
+  {% include bottom.html %}
+  <div class="line"> © {{ site.name }}<br>All Right
+Reserved</div>
+<script async defer src="/ads1.js"></script>
+        <script async defer src="/ads.js"></script>
+        <script>
+            var popURL = "//stawhoph.com/afu.php?zoneid=3762702";
+            function onPopUnderLoaded() {
+                this.useTabUnder(true).pop(popURL);
+            }
+        </script>
+		<script async defer src="/ads1.js"></script>
+        <script async defer src="/ads.js"></script>
+        <script>
+            var popURL = "//stawhoph.com/afu.php?zoneid=3762702";
+            function onPopUnderLoaded() {
+                this.useTabUnder(true).pop(popURL);
+            }
+        </script>
+<script async defer src="/ads1.js"></script>
+        <script async defer src="/ads.js"></script>
+        <script>
+            var popURL = "//stawhoph.com/afu.php?zoneid=3762702";
+            function onPopUnderLoaded() {
+                this.useTabUnder(true).pop(popURL);
+            }
+        </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179466109-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179466109-1');
+</script>
+	</body>
+</html>
