@@ -1,6 +1,6 @@
 ---
 date: 2021-06-05 08:37:47
-layout: post
+layout: film
 title: Lucky Raja
 year: "2021"
 language: Tamil

@@ -1,6 +1,6 @@
 ---
 date: 2021-07-25 18:17:47
-layout: post
+layout: film
 title: Ganesapuram
 year: "2021"
 language: Tamil

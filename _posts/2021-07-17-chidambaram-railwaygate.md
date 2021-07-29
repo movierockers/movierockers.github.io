@@ -1,6 +1,6 @@
 ---
 date: 2021-07-17 23:41:03
-layout: post
+layout: film
 title: Chidambaram Railwaygate
 year: "2021"
 language: Tamil

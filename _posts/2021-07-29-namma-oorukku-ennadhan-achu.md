@@ -1,6 +1,6 @@
 ---
 date: 2021-07-29 16:38:28
-layout: post
+layout: film
 title: " Namma Oorukku Ennadhan Achu"
 year: "2021"
 language: Tamil

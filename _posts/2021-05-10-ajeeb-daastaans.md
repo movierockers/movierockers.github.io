@@ -1,6 +1,6 @@
 ---
 date: 2021-05-10 17:19:28
-layout: post
+layout: film
 title: Ajeeb Daastaans
 year: "2021"
 language: Tamil

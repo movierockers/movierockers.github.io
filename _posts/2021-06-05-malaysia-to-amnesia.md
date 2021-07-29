@@ -1,6 +1,6 @@
 ---
 date: 2021-06-05 08:23:56
-layout: post
+layout: film
 title: Malaysia to Amnesia
 year: "2021"
 language: Tamil

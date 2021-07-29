@@ -1,6 +1,6 @@
 ---
 date: 2021-06-05 08:22:16
-layout: post
+layout: film
 title: Jaya Janaki Nayaka
 year: "2021"
 language: Tamil

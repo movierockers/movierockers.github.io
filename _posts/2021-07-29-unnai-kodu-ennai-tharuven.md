@@ -1,6 +1,6 @@
 ---
 date: 2021-07-29 15:17:11
-layout: post
+layout: film
 title: Unnai Kodu Ennai Tharuven
 year: "2000"
 language: Tamil

@@ -119,7 +119,7 @@ collections:
         format: "YYYY-MM-DD HH:mm:ss"
       - label: "Layout"
         name: "layout"
-        default: "post"
+        default: "film"
       - label: "Title"
         name: "title"
         widget: "string"

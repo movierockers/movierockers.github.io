@@ -1,6 +1,6 @@
 ---
 date: 2021-05-11 23:53:03
-layout: post
+layout: film
 title: Yuvarathnaa
 year: "2021"
 language: Tamil

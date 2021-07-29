@@ -1,6 +1,6 @@
 ---
 date: 2021-07-16 16:12:19
-layout: post
+layout: film
 title: Assamiyin America Payanam
 year: "2021"
 language: Tamil

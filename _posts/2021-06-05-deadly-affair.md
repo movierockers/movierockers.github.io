@@ -1,6 +1,6 @@
 ---
 date: 2021-06-05 08:40:56
-layout: post
+layout: film
 title: Deadly Affair
 year: "2021"
 language: Tamil

@@ -1,6 +1,6 @@
 ---
 date: 2021-07-29 16:32:45
-layout: post
+layout: film
 title: "F9: The Fast Saga"
 year: "2021"
 language: English

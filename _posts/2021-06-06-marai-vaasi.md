@@ -1,6 +1,6 @@
 ---
 date: 2021-06-06 10:58:45
-layout: post
+layout: film
 title: Marai Vaasi
 year: "2021"
 language: Tamil

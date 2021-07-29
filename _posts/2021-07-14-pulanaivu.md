@@ -1,6 +1,6 @@
 ---
 date: 2021-07-14 15:47:30
-layout: post
+layout: film
 title: Pulanaivu
 year: "2019"
 language: Tamil

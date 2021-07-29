@@ -1,6 +1,6 @@
 ---
 date: 2021-07-17 23:06:55
-layout: post
+layout: film
 title: Mission Impossible 3
 year: "2006"
 language: Tamil Dubbed

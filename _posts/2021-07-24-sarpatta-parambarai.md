@@ -1,6 +1,6 @@
 ---
 date: 2021-07-24 11:59:29
-layout: post
+layout: film
 title: Sarpatta Parambarai
 year: "2021"
 language: Tamil

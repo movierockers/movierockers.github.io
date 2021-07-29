@@ -1,6 +1,6 @@
 ---
 date: 2021-06-06 08:28:41
-layout: post
+layout: film
 title: The Pursuit of Happyness
 year: "2006"
 language: Tamil

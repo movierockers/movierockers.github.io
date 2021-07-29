@@ -1,6 +1,6 @@
 ---
 date: 2021-06-06 10:58:10
-layout: post
+layout: film
 title: Asura Vamsam
 year: "2021"
 language: Tamil

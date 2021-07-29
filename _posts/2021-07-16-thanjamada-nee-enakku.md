@@ -1,6 +1,6 @@
 ---
 date: 2021-07-16 15:58:14
-layout: post
+layout: film
 title: Thanjamada Nee Enakku
 year: "2020"
 language: Tamil

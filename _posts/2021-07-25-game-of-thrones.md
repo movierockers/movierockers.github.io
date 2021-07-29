@@ -1,6 +1,6 @@
 ---
 date: 2021-07-25 11:23:04
-layout: post
+layout: film
 title: Game of Thrones
 year: "2011"
 language: Tamil (Fan Dub)

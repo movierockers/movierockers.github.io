@@ -1,6 +1,6 @@
 ---
 date: 2021-05-11 05:10:38
-layout: post
+layout: film
 title: Un Kadhal Thadathil
 year: "2021"
 language: Tamil

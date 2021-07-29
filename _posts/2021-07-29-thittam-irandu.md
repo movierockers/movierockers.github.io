@@ -1,6 +1,6 @@
 ---
 date: 2021-07-30 04:32:36
-layout: post
+layout: film
 title: " Thittam Irandu"
 year: "2021"
 language: Tamil

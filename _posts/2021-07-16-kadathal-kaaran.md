@@ -1,6 +1,6 @@
 ---
 date: 2021-07-16 16:06:00
-layout: post
+layout: film
 title: Kadathal Kaaran
 year: "2021"
 language: Tamil

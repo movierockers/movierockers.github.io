@@ -1,6 +1,6 @@
 ---
 date: 2021-07-29 15:19:36
-layout: post
+layout: film
 title: Kandukondain Kandukondain
 year: "2000"
 language: Tamil

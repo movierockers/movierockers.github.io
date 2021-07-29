@@ -1,6 +1,6 @@
 ---
 date: 2021-06-05 08:25:22
-layout: post
+layout: film
 title: Engada Irunthinga Ivvalavu Naala
 year: "2021"
 language: Tamil

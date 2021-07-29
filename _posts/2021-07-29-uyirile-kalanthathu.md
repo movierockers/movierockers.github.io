@@ -1,6 +1,6 @@
 ---
 date: 2021-07-29 15:20:56
-layout: post
+layout: film
 title: Uyirile Kalanthathu
 year: "2000"
 language: Tamil

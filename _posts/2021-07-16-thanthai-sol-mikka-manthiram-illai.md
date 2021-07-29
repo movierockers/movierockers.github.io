@@ -1,6 +1,6 @@
 ---
 date: 2021-07-16 15:59:33
-layout: post
+layout: film
 title: Thanthai Sol Mikka Manthiram illai
 year: "2020"
 language: Tamil

@@ -1,6 +1,6 @@
 ---
 date: 2021-06-06 08:22:36
-layout: post
+layout: film
 title: Yevandi Unna Peththan
 year: "2021"
 language: Tamil

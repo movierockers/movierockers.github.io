@@ -1,6 +1,6 @@
 ---
 date: 2021-07-29 15:22:20
-layout: post
+layout: film
 title: Kannukkul Nilavu
 year: "2000"
 language: Tamil

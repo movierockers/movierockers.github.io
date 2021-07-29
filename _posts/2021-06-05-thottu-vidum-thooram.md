@@ -1,6 +1,6 @@
 ---
 date: 2021-06-05 08:25:47
-layout: post
+layout: film
 title: Thottu Vidum Thooram
 year: "2021"
 language: Tamil

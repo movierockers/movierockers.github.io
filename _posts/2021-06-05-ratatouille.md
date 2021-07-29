@@ -1,6 +1,6 @@
 ---
 date: 2021-06-05 08:40:14
-layout: post
+layout: film
 title: Ratatouille
 year: "2007"
 language: Tamil
