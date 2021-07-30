@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html amp lang="en">
+<html lang="en">
 
 <head>
      {% assign url = '' %}
@@ -1014,8 +1014,7 @@
     </div>
 
     <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="news-img">
-        <amp-img src="{{ page.poster }}" alt="{{ page.title }}" width="728"
-            height="410" layout="responsive"></amp-img>
+        
         <meta itemprop="url" content="{{ page.image }}" />
         <meta itemprop="width" content="728" />
         <meta itemprop="height" content="410" />
@@ -1042,6 +1041,7 @@
         </div>
 
     <div itemprop="articleBody" class="content-body">
+{% include toc.html %}
         <p>
      {{ content }}
          </p>
