@@ -17,5 +17,6 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <priority>1.00</priority>
 </url>
           {% endfor %}
+ {% endif %}
     
 </urlset>
