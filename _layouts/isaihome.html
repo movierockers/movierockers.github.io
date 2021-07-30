@@ -75,6 +75,7 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 		    <br/><input type="submit" value="Search"/></form>
 		   </div>
 <div class="Adz">
+	<div class="form"><b>Moviesda 2021 Movies Download Moviesda Tamil 2021 Movies Download Moviesda.net 2021 Mobile Movies Download Moviesda 2021 HD Movies Download Moviesda 2021 Download MyMoviesda.Com Tamil Moviesda New 720p HD 5.1 Movies Download Tamil 2021 Movies Moviesda Download MyMoviesda Home Page Tamil 2021 Mobile Movies Download</b></div>
 </div>
 </div>
 
@@ -92,21 +93,23 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
            </div>
 	
 	<div class="line">Downloads</div>
+	{% for item in site.menu %}
+    {% if item.title and item.url %}
 	
-	<div itemscope itemtype="https://schema.org/SiteNavigationElement">
-{% assign categories_list = site.categories %}
-  {% if categories_list.first[0] == null %}
-    {% for category in categories_list %}
-      <div class="f" itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg=="><a itemprop="url" href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a></div>
-    {% endfor %}
-  {% else %}
-    {% for category in categories_list %}
-      <div class="f" itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg=="><a itemprop="url" href="{{site.url}}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a></div>
-    {% endfor %}
-		{% include pagination-home.html %}
-  {% endif %}
-{% assign categories_list = nil %}
-</div>
+ <div class="f" title="{{ item.title }} movie download tamilrockers"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg==" alt="{{ item.title }} movie download isaimini">
+<a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></div>
+    {% endif %}
+  {% endfor %}
+	
+	<div class="line">Downloads</div>
+	{% for item in site.menu2 %}
+    {% if item.title and item.url %}
+
+	
+ <div class="f" title="{{ item.title }} movie download tamilrockers"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg==" alt="{{ item.title }} movie download isaimini">
+<a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></div>
+    {% endif %}
+  {% endfor %}
 	
 	
 	
@@ -116,6 +119,7 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 
 <div class="bottom" align="center">
 <div class="Adz">
+	<div class="form"><b> <a href="https://ijayasurya.github.io/tamilrockers.html">TamilRockers Movies</a> - <a href="https://ijayasurya.github.io/moviesda-downloads.html">Moviesda HD Movies</a> - <a href="https://ijayasurya.github.io/isaidub-download.html">IsaiDub Dubbed Movies</a> - <a href="https://ijayasurya.github.io/moviesda-2019-movies.html">Moviesda 2019 Movies</a> - <a href="https://ijayasurya.github.io/tamilgun-hd-movies.html">TamilGun Movies Download</a> - <a href="https://ijayasurya.github.io/tamilrockers-tamil-2019-movies.html">TamilRockers 2019 Movies</a> - <a href="https://ijayasurya.github.io/tamilrockers-2020-movies.html">TamilRockers 2020 Movies</a> - <a href="https://ijayasurya.github.io/tamil-dubbed-movies.html">Tamil Dubbed Movies</a> - <a href="https://ijayasurya.github.io/tamilyogi-movies.html">TamilYogi HD Movies</a> - <a href="https://ijayasurya.github.io/moviesda-2020-movies.html">Moviesda 2020 Movies</a> - <a href="https://ijayasurya.github.io/isaimini-2020-movies.html">Isaimini 2020 Movies</a> - <a href="https://ijayasurya.github.io/tamil-mp3-songs.html">Tamil Mp3 Songs</a> - <a href="https://ijayasurya.github.io/isaidub-2020-movies.html">IsaiDub 2020 Movies</a> - <a href="https://ijayasurya.github.io/tamilrockers-2021-movies.html">TamilRockers 2021 Movies</a> - <a href="https://ijayasurya.github.io/moviesda-2021-movies.html">Moviesda 2021 Movies</a></b></div>
 </div>
 </div>
 <div class="line"> © Tentrockers<br/>All Right Reserved</div>
