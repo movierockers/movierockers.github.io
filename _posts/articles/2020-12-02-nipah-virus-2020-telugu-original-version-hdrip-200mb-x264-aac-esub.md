@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 16:37:04
 layout: torrent
-category: torrent
+category: Torrents
 title: NIPAH VIRUS (2020) Telugu (Original Version) HDRip - 200MB - x264 - AAC - ESub
 size: "200MB "
 type: Video

@@ -1,7 +1,7 @@
 ---
 date: 2020-12-03 17:38:35
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Ka Pae Ranasingam (2020) Movie Download HD Tamilrockers
 seotitle: Ka Pae Ranasingam
 poster: http://kuttymovies7.net/poster/Ka_Pae_Ranasingam_(2020)_Movie_Poster.jpg

@@ -1,7 +1,7 @@
 ---
 date: 2020-12-01 21:54:12
 layout: torrent
-category: torrent
+category: Torrents
 title: Angel Has Fallen (2019) Blu-Ray - 720p - x264 - TRUE Original Audios
   [Tamil + Telugu + Hindi + Kannada + Eng] - 1.4GB - ESub
 size: 1.4GB

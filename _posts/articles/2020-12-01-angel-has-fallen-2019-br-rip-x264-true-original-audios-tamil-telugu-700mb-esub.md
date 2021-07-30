@@ -1,7 +1,7 @@
 ---
 date: 2020-12-01 21:53:39
 layout: torrent
-category: torrent
+category: Torrents
 title: Angel Has Fallen (2019) BR-Rip - x264 - TRUE Original Audios [Tamil +
   Telugu] - 700MB - ESub
 size: "700MB "

@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 18:07:11
 layout: movie
-category: movie
+category: Moviesda Movies
 title: The Pursuit of Happyness (2006) Movie Download HD Tamilrockers in [Tamil
   + English + Malayalam + Telugu + Hindi]
 seotitle: The Pursuit of Happyness

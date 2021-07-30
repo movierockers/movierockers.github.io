@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 21:17:07
 layout: movie
-category: movie
+category: Moviesda Movies
 title: The Conjuring (2013) Movie Download HD 720p BDRip's - [Tamil + Telugu +
   Hindi + Eng]
 seotitle: The Conjuring

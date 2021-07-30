@@ -1,7 +1,7 @@
 ---
 date: 2020-12-03 17:53:49
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Wrong Turn 3 Left For Dead (2009) Movie Download HD Tamilrockers
 seotitle: Wrong Turn 3
 poster: https://images-na.ssl-images-amazon.com/images/I/51zzdhgMtCL._AC_.jpg

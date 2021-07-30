@@ -35,7 +35,7 @@ maguva movie download in tamilrockers
 maguva telugu movie download jio rockers
 maguva movie download movierulz
 maguva full movie download movierulz
-maguva full movie download moviezwap
+maguva full movie download category: Moviesda Movieswap
 maguva maguva movie songs download
 maguva movie download movie rulz
 maguva movie subtitles download

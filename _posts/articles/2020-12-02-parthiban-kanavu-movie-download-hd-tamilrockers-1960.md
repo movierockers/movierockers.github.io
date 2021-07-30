@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 17:44:05
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Parthiban Kanavu Movie Download HD Tamilrockers (1960)
 seotitle: Parthiban Kanavu
 poster: https://upload.wikimedia.org/wikipedia/en/f/f5/Parthiban_Kanavu_%281960%29.jpg

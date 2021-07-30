@@ -1,7 +1,7 @@
 ---
 date: 2020-12-03 17:47:02
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Arjun Reddy (2017) Movie Download HD Tamilrockers
 seotitle: Arjun Reddy (Telugu)
 poster: https://m.media-amazon.com/images/M/MV5BMzFhMThiOWItMzRjNC00YzQwLTkyZWItYmJhNzgwYzY1ODI0XkEyXkFqcGdeQXVyNTcyMzkyODg@._V1_.jpg

@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 21:37:34
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Home Alone (1992) Movie Download HD [720p BDRip - [Tamil + Hindi + Eng - x264]
 seotitle: Home Alone 2
 poster: https://i.ytimg.com/vi/vMA6TwCVZUM/movieposter.jpg

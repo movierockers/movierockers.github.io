@@ -1,5 +1,5 @@
 ---
-category: torrent
+category: Torrents
 date: 2020-11-29 22:47:42
 layout: torrent
 title: Nine Warriors 1 (2017) HDRip - Original Audios [Tamil + Telugu] - XviD - 650MB

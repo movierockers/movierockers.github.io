@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 21:39:09
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Home Alone (1997) Movie Download HD [720p BDRip - [Tamil + Hindi + Eng - x264]
 seotitle: Home Alone 3
 poster: https://resizing.flixster.com/H0bkBfB63VncXKdSCdY0S8_Lnyo=/206x305/v2/https://flxt.tmsimg.com/assets/p20344_p_v10_aa.jpg

@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 17:46:08
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Nenjirukkum Varai (2006) Movie Download HD Tamilrockers
 seotitle: Nenjirukkum Varai
 poster: http://orutamil.com/Poster/Tamil/Movie/Nenjirukkum-Varai-2006.jpg

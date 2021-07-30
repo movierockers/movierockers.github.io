@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 16:36:37
 layout: torrent
-category: torrent
+category: Torrents
 title: The Immortal Wars (2018) Blu-Ray - 1080p - x264 - Original Audios [Tamil
   + Telugu + Hindi + Eng] - 2GB - ESub
 size: 2GB

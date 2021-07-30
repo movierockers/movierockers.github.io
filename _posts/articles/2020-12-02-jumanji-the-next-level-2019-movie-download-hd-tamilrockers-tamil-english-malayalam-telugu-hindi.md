@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 18:04:21
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Jumanji The Next Level (2019) Movie Download HD Tamilrockers [Tamil +
   English + Malayalam + Telugu + Hindi]
 seotitle: "Jumanji The Next Level "

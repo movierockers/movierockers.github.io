@@ -1,7 +1,7 @@
 ---
 date: 2020-12-01 20:53:39
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Minions Holiday Special (2020) Movie Download HD Tamilrockers [200 MB]
 seotitle: Minions Holiday Special
 poster: https://extraimages.net/images/2020/12/01/mhs.jpg

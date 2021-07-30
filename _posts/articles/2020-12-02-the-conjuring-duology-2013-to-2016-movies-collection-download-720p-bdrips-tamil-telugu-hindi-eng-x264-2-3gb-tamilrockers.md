@@ -55,7 +55,7 @@ the conjuring movie download.com
 the conjuring tamil dubbed movie collection download
 the conjuring full movie download filmyzilla.com
 the conjuring full movie download filmywap.com
-the conjuring full movie download in hindi coolmoviez
+the conjuring full movie download in hindi coolcategory: Moviesda Movies
 the conjuring 2013 full movie download movies counter
 the conjuring 3 full movie download in isaimini.com
 the conjuring hindi dubbed full movie download filmywap.com
@@ -91,8 +91,8 @@ the conjuring movie download hindi mein
 how to download the conjuring movie
 how to download the conjuring movie in hindi
 the conjuring movie download in hindi 1080p
-the conjuring full movie in hindi download jalshamoviez
-the conjuring 2 full movie in hindi download jalshamoviez
+the conjuring full movie in hindi download jalshacategory: Moviesda Movies
+the conjuring 2 full movie in hindi download jalshacategory: Moviesda Movies
 the conjuring movie download in kuttymovies
 the conjuring 2 movie download khatrimaza
 the conjuring movie download in hindi khatrimaza

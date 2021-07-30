@@ -1,7 +1,7 @@
 ---
 date: 2020-12-03 17:48:14
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Wrong Turn 1 (2003) Movie Download HD Tamilrockers
 seotitle: Wrong Turn
 poster: https://images-na.ssl-images-amazon.com/images/I/51G9ET1RVEL._AC_SY445_.jpg

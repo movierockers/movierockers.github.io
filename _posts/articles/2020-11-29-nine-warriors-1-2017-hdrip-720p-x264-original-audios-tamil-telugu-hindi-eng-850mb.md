@@ -1,5 +1,5 @@
 ---
-category: torrent
+category: Torrents
 date: 2020-11-29 22:45:05
 layout: torrent
 title: Nine Warriors 1 (2017) HDRip - 720p - x264 - Original Audios [Tamil +

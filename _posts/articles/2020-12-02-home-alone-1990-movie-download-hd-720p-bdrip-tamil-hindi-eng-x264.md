@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 21:24:39
 layout: movie
-category: movie
+category: Moviesda Movies
 title: Home Alone (1990) Movie Download HD [720p BDRip - [Tamil + Hindi + Eng - x264]
 seotitle: Home Alone 1
 poster: https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg

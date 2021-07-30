@@ -1,5 +1,5 @@
 ---
-category: torrent
+category: Torrents
 date: 2020-11-30 12:07:34
 layout: torrent
 title: BIGG BOSS (Tamil) S04 DAY 56 HDTV - 480p - AVC - UNTOUCHED - AAC - 549MB

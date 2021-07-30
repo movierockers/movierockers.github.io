@@ -1,7 +1,7 @@
 ---
 date: 2020-12-02 16:35:45
 layout: torrent
-category: torrent
+category: Torrents
 title: The Immortal Wars (2018) BR-Rip - x264 - Original Audios [Tamil + Telugu]
   - 400MB - ESub
 size: 400MB
