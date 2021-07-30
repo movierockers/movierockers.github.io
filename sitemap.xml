@@ -7,7 +7,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"> 
 
     
-        {% for post in site.posts limit:1000 %}
+        {% for post in site.posts limit:10000 %}
 <url>
 <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
   <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
