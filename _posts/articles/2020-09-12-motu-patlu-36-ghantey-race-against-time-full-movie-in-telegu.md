@@ -1,0 +1,27 @@
+---
+title: "Motu Patlu 36 Ghantey Race Against Time Full Movie In Telegu"
+date: "2020-09-12"
+---
+
+# Motu Patlu 36 Ghantey Race Against Time Full Movie In Telegu
+
+[![](https://1.bp.blogspot.com/-LYQwK47-uZg/XybJWrNULrI/AAAAAAAACNQ/6qHGHRynInISrIFIRPRXIweOzHC8zPzGgCLcBGAsYHQ/w400-h220/Motu{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BPatlu{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2B36{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BGhantey{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BRace{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BAgainst{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BTime.jpg)](https://1.bp.blogspot.com/-LYQwK47-uZg/XybJWrNULrI/AAAAAAAACNQ/6qHGHRynInISrIFIRPRXIweOzHC8zPzGgCLcBGAsYHQ/s1138/Motu{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BPatlu{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2B36{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BGhantey{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BRace{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BAgainst{c48f4630022c0d57354920639953d21a0626fbbe35cb91b826b45669a52e752e}2BTime.jpg)
+
+**About This Content: Motu and Patlu are two inseparable friends who aim to find a golden car after finishing a race. During their journey, they overcome several obstacles and also help in exposing a thief.**
+
+**INFORMATION:  
+NAME: MOTU PATLU 36 GHANTEY RACE AGAINST TIME  
+LANGUAGE: TELEGU  
+SIZE: 887 MB  
+QUALITY: 720P TVRIP  
+ENCODED BY :** **UNITAMILCARTOONS**
+
+[![](https://1.bp.blogspot.com/-GbheMl40-R8/XybFQP0q8wI/AAAAAAAACNA/DPa_JveUoGEBDRsYF2_ZDuUlD7OPQDE0wCLcBGAsYHQ/w400-h222/maxresdefault.jpg)](https://1.bp.blogspot.com/-GbheMl40-R8/XybFQP0q8wI/AAAAAAAACNA/DPa_JveUoGEBDRsYF2_ZDuUlD7OPQDE0wCLcBGAsYHQ/s1279/maxresdefault.jpg)
+
+**GOOGLE DRIVE SERVER 720P**  **[WATCH|DOWNLOAD](https://gplinks.co/jQDH8X)**
+
+**PLEASE DON’T COPY THIS CONTENT…**
+
+****SCREENSHOTS:****
+
+****[![](https://1.bp.blogspot.com/-btpxRLeDLbQ/XybNKH05Z1I/AAAAAAAACNc/2u9VFxyxQZI0oJa2y9DttRZFIfxMiE18gCLcBGAsYHQ/w400-h153/Screenshots.png)](https://1.bp.blogspot.com/-btpxRLeDLbQ/XybNKH05Z1I/AAAAAAAACNc/2u9VFxyxQZI0oJa2y9DttRZFIfxMiE18gCLcBGAsYHQ/s1552/Screenshots.png)****
