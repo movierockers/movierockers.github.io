@@ -11,4 +11,10 @@ category: News
 
 ![images-11.jpg](https://i.ibb.co/kxFznwK/images-11.jpg)
 
-### <center>[Download](https://gplinks.co/xFa7)</center>
+<!--EndFragment-->
+
+<!--StartFragment-->
+
+### [Download](https://gplinks.co/xFa7)
+
+<!--EndFragment-->
