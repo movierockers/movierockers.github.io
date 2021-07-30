@@ -10,7 +10,7 @@ use_logo: false
 show_time_bar: false
 instagram_username: instagram_username
 show_modal_on_exit: false
-name: Isaimini
+name: Tamilrockers Movies Download
 permalink: /:title/
 paginate_path: /page/:num/
 sass:
@@ -47,7 +47,7 @@ collections:
 paginate: 10
 linkedin_username: linkedin_username
 version: live
-title: Isaimini
+title: TamilRockers 2021 Movies Download, Moviesda 2021 HD Movies Download
 language: en
 description: Watch and Download Tamil, Telugu, Hindi, Malayalam, Kannada,
   English, Movies and Web series 2021
