@@ -5,3 +5,5 @@ Allow: /Moviesda/
 
 Sitemap: {{site.url}}/video.xml
 Sitemap: {{site.url}}/feed.xml
+Sitemap: {{site.url}}/category-sitemap.xml
+Sitemap: {{site.url}}/sitemap.xml
