@@ -10,7 +10,7 @@ use_logo: false
 show_time_bar: false
 instagram_username: instagram_username
 show_modal_on_exit: false
-name: Isaimini
+name: Tamilrockers Movies Download
 permalink: /:title/
 paginate_path: /page/:num/
 sass:
