@@ -1,6 +1,7 @@
 ---
 date: 2020-12-15 11:45:08
 layout: collection
+category: Tamil Dubbed Collections
 title: Avengers Trilogy
 coldi:
   - title: "The Avengers (2012) "
