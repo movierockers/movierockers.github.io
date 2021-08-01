@@ -59,7 +59,6 @@ collections:
         default: "collection"
       - label: "Category"
         name: "category"
-        default: "News"
         widget: "relation"
         collection: "categories"
         searchFields: ["title"]
@@ -147,7 +146,6 @@ collections:
         required: false
       - label: "Category"
         name: "category"
-        default: "News"
         widget: "relation"
         collection: "categories"
         searchFields: ["title"]
