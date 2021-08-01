@@ -1,6 +1,7 @@
 ---
 date: 2020-12-15 09:56:32
 layout: collection
+category: Tamil Dubbed Collections
 title: Terminator Pentalogy
 coldi:
   - title: Terminator 1 (1984)
