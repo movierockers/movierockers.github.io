@@ -1,6 +1,7 @@
 ---
 date: 2020-12-15 22:05:49
 layout: collection
+category: Tamil Dubbed Collections
 title: Resident Evil Pentalogy
 coldi:
   - title: Resident Evil (2002)
