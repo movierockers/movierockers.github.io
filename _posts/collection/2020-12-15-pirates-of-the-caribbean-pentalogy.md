@@ -1,6 +1,7 @@
 ---
 date: 2020-12-15 21:59:41
 layout: collection
+category: Tamil Dubbed Collections
 title: Pirates Of The Caribbean Pentalogy
 coldi:
   - title: Pirates of the Caribbean 1 (2003)
