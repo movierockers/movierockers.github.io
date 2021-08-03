@@ -1,5 +1,5 @@
 ---
 layout: actor
-title: " Atharvaa"
-slug: " Atharvaa"
+title: Atharvaa
+slug: Atharvaa
 ---
