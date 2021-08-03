@@ -40,12 +40,12 @@
 <meta property="og:type" content="video.movie" />
 <meta property="og:url" content="{{ url }}" />
 <meta property="og:image" content="{{ page.poster }}" />
-<meta property="video:director" content="{{ page.director }}">
+<meta property="video:director" content="{{ page.directors }}">
 <meta property="video:release_date" content="{{ page.date }}">
 <meta property="og:video" content="{{ page.video }}">
 <meta property="og:video:secure_url" content="{{ page.video }}">
 <meta property="og:video:type" content="video/mp4">
-<meta property="video:tag" content="{{ page.genre }}">
+<meta property="video:tag" content="{{ page.genres }}">
 <meta name="theme-color" content="#141414">
 
 <link rel="stylesheet" href="/assets/css/isai.css">
@@ -55,8 +55,8 @@
 <meta itemprop="name" content="{{ page.title }}">
 <meta itemprop="image" content="{{ page.poster }}">
 <meta itemprop="dateCreated" content="{{ page.date }}">
-<meta itemprop="genre" content="{{ page.genre }}">
-<meta itemprop="director" content="{{ page.director }}">
+<meta itemprop="genre" content="{{ page.genres }}">
+<meta itemprop="director" content="{{ page.directors }}">
 <meta itemprop="author" content="{{ site.name }}">
 
 <div class="line">
@@ -76,18 +76,18 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 
 <tbody><tr><td><b>Movie</b></td><td><b>:</b></td><td>{{ page.title }}</td></tr>
 
-<tr><td><b>Year</b></td><td><b>:</b></td><td><a href="/year/{{ page.year }}">{{ page.year }}</td></tr>
+<tr><td><b>Year</b></td><td><b>:</b></td><td><a href="/year/{{ page.years }}">{{ page.years }}</td></tr>
 
 
-<tr><td><b>Director</b></td><td><b>:</b></td><td><a href="/director/{{ page.director }}">{{ page.director }}</a></td></tr>
+<tr><td><b>Director</b></td><td><b>:</b></td><td><a href="/director/{{ page.directors }}">{{ page.directors }}</a></td></tr>
 
-<tr><td><b>Actor</b></td><td><b>:</b></td><td><a href="/actor/{{ page.actor }}">{{ page.actor }}</a></td></tr>
+<tr><td><b>Actor</b></td><td><b>:</b></td><td><a href="/actor/{{ page.actors }}">{{ page.actors }}</a></td></tr>
 
-<tr><td><b>Genres</b></td><td><b>:</b></td><td><a href="/genre/{{ page.genre }}">{{ page.genre }}</a></td></tr>
+<tr><td><b>Genres</b></td><td><b>:</b></td><td><a href="/genre/{{ page.genres }}">{{ page.genres }}</a></td></tr>
 
-<tr><td><b>Quality</b></td><td><b>:</b></td><td><a href="/quality/{{ page.quality }}">{{ page.quality }}</a></td></tr>
+<tr><td><b>Quality</b></td><td><b>:</b></td><td><a href="/quality/{{ page.qualitys }}">{{ page.qualitys }}</a></td></tr>
 
-<tr><td><b>Language</b></td><td><b>:</b></td><td><a href="/language/{{ page.language }}">{{ page.language }}</a></td></tr>
+<tr><td><b>Language</b></td><td><b>:</b></td><td><a href="/language/{{ page.languages }}">{{ page.languages }}</a></td></tr>
 
 <tr><td><b>Size</b></td><td><b>:</b></td><td>{{ page.size }}</td></tr>
 
