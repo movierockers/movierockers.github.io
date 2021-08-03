@@ -62,9 +62,9 @@ collections:
         displayFields: ["title"]
         required: false
       - label: "language"
-        name: "languages"
+        name: "language"
         widget: "relation"
-        collection: "language"
+        collection: "languages"
         searchFields: ["title"]
         valueField: "slug"
         displayFields: ["title"]
