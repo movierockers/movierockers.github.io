@@ -25,6 +25,11 @@ paginate_content:
   collections:
     - posts
     - category
+    - actor
+    - director
+    - language
+    - genre
+    - quality
   auto: false
   separator: --page-break--
   permalink: /:num/
