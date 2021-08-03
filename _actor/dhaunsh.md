@@ -1,5 +1,5 @@
 ---
 layout: actor
-title: Dhaunsh
-slug: Dhaunsh
+title: Dhanush
+slug: Dhanush
 ---
