@@ -50,11 +50,15 @@ collections:
     output: true
   articles:
     output: true
-  actors:
+  actor:
     output: true
-  directors:
+  director:
     output: true
-  languages:
+  language:
+    output: true
+  quality:
+    output: true
+  genre:
     output: true
 paginate: 10
 linkedin_username: linkedin_username
