@@ -3,6 +3,129 @@ backend:
   branch: master
 media_folder: "assets/img/uploads"
 collections:
+  - label: "IMDb Movies"
+    name: "isaiminidb"
+    folder: "_posts/films"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{title}}"
+    extension: "md"
+    fields:
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss"
+      - label: "Layout"
+        name: "layout"
+        default: "imdb"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Year"
+        name: "year"
+        widget: "string"
+      - label: "Language"
+        name: "language"
+        widget: "string"
+      - label: "Quality"
+        name: "quality"
+        widget: "string"
+      - label: "Actor"
+        name: "actor"
+        widget: "relation"
+        collection: "actor"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+        required: false
+      - label: "Director"
+        name: "director"
+        widget: "relation"
+        collection: "director"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+        required: false
+      - label: "genre"
+        name: "genre"
+        widget: "relation"
+        collection: "genre"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+        required: false
+      - label: "quality"
+        name: "quality"
+        widget: "relation"
+        collection: "quality"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+        required: false
+      - label: "year"
+        name: "year"
+        widget: "relation"
+        collection: "year"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+        required: false
+      - label: "language"
+        name: "language"
+        widget: "relation"
+        collection: "language"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+        required: false
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+        required: false
+      - label: "IMDB ID"
+        name: "imdb"
+        widget: "string"
+      - label: "Size"
+        name: "size"
+        widget: "string"
+      - label: "Video Url"
+        name: "video"
+        widget: "string"
+        required: false
+      - label: "Poster Url"
+        name: "poster"
+        widget: "string"
+        required: false
+      - label: "Description"
+        name: "description"
+        hint: "This will be used across the pages and for search engines."
+        widget: "string"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        hint: "Separate with commas. These will also be used as keywords for search engines."
+        widget: "list"
+        required: false
+      - label: "Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        displayFields: [display_name]
+        searchFields: [display_name]
+        valueField: "name"
+        required: false
+      - label: "Paginate"
+        name: "paginate"
+        widget: "boolean"
+        default: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
   - label: "Season Collection"
     name: "sead"
     folder: "_posts/episodes"
