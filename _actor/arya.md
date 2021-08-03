@@ -1,5 +1,5 @@
 ---
 layout: actor
-title: " Arya"
-slug: " Arya"
+title: Arya
+slug: Arya
 ---
