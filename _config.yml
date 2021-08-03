@@ -60,6 +60,8 @@ collections:
     output: true
   genre:
     output: true
+  year:
+    output: true
 paginate: 10
 linkedin_username: linkedin_username
 version: live

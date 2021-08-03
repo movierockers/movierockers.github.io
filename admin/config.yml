@@ -258,6 +258,26 @@ collections:
       - label: "Slug"
         name: "slug"
         widget: "string"
+  - label: "Year"
+    name: "year"
+    folder: "_year"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    preview_path: "year/{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "year"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
   - label: "Categories"
     name: "categories"
     folder: "category"

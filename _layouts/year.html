@@ -1,0 +1,92 @@
+<html>
+<head>
+{% if site.paginate %}
+    {% assign posts = paginator.posts | where_exp:"post","post.is_generated != true" %}
+{% else %}
+    {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
+{% endif %}
+	
+    {% assign title = '' %}
+    {% if page.layout == 'author' %}
+        {% assign title = page.display_name %}
+    {% elsif page.title %}
+        {% assign title = page.title | append: " | " | append: site.name %}
+    {% else %}
+        {% assign title = site.title %}
+    {% endif %}
+
+    {% assign image = '' %}
+    {% if page.image %}
+        {% assign image = page.image %}
+    {% else %}
+        {% assign image = "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
+
+    {% assign description = '' %}
+    {% if page.description %}
+        {% assign description = page.description | strip_html | strip_newlines | truncate: 160 %}
+    {% else %}
+        {% assign description = site.description %}
+    {% endif %}
+
+    {% assign url = '' %}
+    {% if paginator.page_trail %}
+        {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% else %}
+        {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>{{ page.title }} Movies Download - {{ site.name }}</title>
+<meta property="description" content="{{ page.title }} Movies Collection Full Movie Download {{ post.title }} Movies Collection HD 1080P Full Movie Download {{ page.title }} Movies Collection Tamilrockers Moviesda Download isaimini">
+<meta property="og:title" content="{{ page.title }} Movies Download - {{ site.name }}" />
+<meta property="og:description" content="{{ page.title }} Movies Collection Full Movie Download {{ post.title }} Movies Collection HD 1080P Full Movie Download {{ page.title }} Movies Collection Tamilrockers Moviesda Download isaimini">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:url" content="{{ url }}" />
+<meta name="theme-color" content="#141414">
+<meta name="distribution" content="Global" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index, follow" />
+<link rel="stylesheet" href="https://www.isaiminiweb.site/assets/css/isai.css">
+</head>
+<body>
+
+<div class="line">
+<font size="4px">{{ site.name }}</font>
+<br/>
+<small>Name Of Quality</small></div>
+<div class="bottom" align="center">
+Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="red">Telegram Channel</font></a> & Get Updates and Movies! 
+        
+		   </div>
+
+<div class="line">{{ page.title }} Movies</div>
+
+
+{% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
+	    
+                    {% for post in posts %}
+                        {% if post.genre == page.slug %}
+
+<div class="f" title="{{ post.title }} ({{ post.year }})"> <img src="/dir.gif" alt="{{ post.title }} Movies Download"> <a href="{{ post.url }}">{{ post.title }} ({{ post.year }})</a></div>
+
+
+ {% endif %}
+                    {% endfor %}
+
+<div class="aut">Page Tags :</div>
+
+<div class="Tag"><font color="green">{{ page.title }} Movies Collection Full Movie Download {{ post.title }} Movies Collection HD 1080P Full Movie Download {{ page.title }} Movies Collection Tamilrockers Moviesda Download isaimini</font></div>
+
+<div class="bottom"><a href="/">Home</a>
+|
+<a href="/contact.xhtml">Contact Us</a>
+|
+ <a href="/dmca.xhtml">DMCA</a></div>
+
+<div class="line"> © {{ site.name }}<br/>All Right Reserved</div>
+	
+
+
+</body>
+</html>
