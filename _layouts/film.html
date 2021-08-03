@@ -1037,7 +1037,7 @@ font-family: system-ui;
       </ul>
 </div>
 	 <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
-{% for item in site.articles %}
+{% for item in site.actor %}
   <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }}</a></li>  
 {% endfor %}  
         
