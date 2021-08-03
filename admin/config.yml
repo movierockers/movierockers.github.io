@@ -160,7 +160,7 @@ collections:
         widget: "markdown"
   - label: "Actors"
     name: "actor"
-    folder: "actor"
+    folder: "_actor"
     create: true
     editor:
       preview: false
@@ -180,7 +180,7 @@ collections:
         widget: "string"
   - label: "Directors"
     name: "director"
-    folder: "director"
+    folder: "_director"
     create: true
     editor:
       preview: false
@@ -200,7 +200,7 @@ collections:
         widget: "string"
   - label: "Genre"
     name: "genre"
-    folder: "genre"
+    folder: "_genre"
     create: true
     editor:
       preview: false
@@ -220,7 +220,7 @@ collections:
         widget: "string"
   - label: "Language"
     name: "languages"
-    folder: "language"
+    folder: "_language"
     create: true
     editor:
       preview: false
@@ -240,7 +240,7 @@ collections:
         widget: "string"
   - label: "Quality"
     name: "quality"
-    folder: "quality"
+    folder: "_quality"
     create: true
     editor:
       preview: false
