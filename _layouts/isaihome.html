@@ -111,6 +111,10 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 <a href="{{ item.url }}">{{ item.title }}</a></div>
     {% endif %}
   {% endfor %}
+		<div class="line">Downloads</div>
+	{% for item in site.actors %}
+  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }}</a></li>  
+{% endfor %}  
 	
 	
 	

@@ -42,6 +42,7 @@ paginate_content:
     single:
       is_generated: true
 categories_folder: category
+actors_folder: actor
 github_username: github_username
 disqus_username: disqus_username
 collections:

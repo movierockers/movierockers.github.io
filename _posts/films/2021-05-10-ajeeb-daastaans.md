@@ -5,6 +5,7 @@ title: Ajeeb Daastaans
 year: "2021"
 language: Tamil
 quality: HD
+actor: Rajinikanth
 category: Tamil Movies 2021
 size: 599.86MB
 video: https://gplinks.co/YYJbnp
