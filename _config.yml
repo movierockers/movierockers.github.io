@@ -44,6 +44,12 @@ collections:
     output: true
   articles:
     output: true
+  actors:
+    output: true
+  directors:
+    output: true
+  languages:
+    output: true
 paginate: 10
 linkedin_username: linkedin_username
 version: live
