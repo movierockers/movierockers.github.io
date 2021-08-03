@@ -1,6 +1,7 @@
 ---
 date: 2020-12-31 01:40:23
 layout: collection
+category: Tamil Dubbed Collections
 title: Game of Thrones All Season
 coldi:
   - title: Season 1 (2011)

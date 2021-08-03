@@ -57,6 +57,13 @@ collections:
         name: "layout"
         widget: "hidden"
         default: "collection"
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
       - label: "Name"
         name: "title"
         widget: "string"
@@ -92,7 +99,7 @@ collections:
       - label: "Category"
         name: "category"
         widget: "hidden"
-        default: "torrent"
+        default: "Torrents"
       - label: "Name"
         name: "title"
         widget: "string"
