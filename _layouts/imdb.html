@@ -74,17 +74,20 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 <div class="pr">
 <img style="margin-left: 7px;" typeof="foaf:Image" src="{{ page.poster }}" width="153px" height="180px" alt="{{ page.title }} ({{ page.year }}) Movie Poster" title="{{ page.title }} ({{ page.year }}) Movie Poster" class="tbl"><table cellspacing="5">
 
-<tbody><tr><td><b>Movie</b></td><td><b>:</b></td><td>{{ page.title }} {{ page.year }}</td></tr>
+<tbody><tr><td><b>Movie</b></td><td><b>:</b></td><td>{{ page.title }}</td></tr>
 
-<tr><td><b>Director</b></td><td><b>:</b></td><td>{{ page.director }}</td></tr>
+<tr><td><b>Year</b></td><td><b>:</b></td><td><a href="/year/{{ page.year }}">{{ page.year }}</td></tr>
 
-<tr><td><b>Actor</b></td><td><b>:</b></td><td>{{ page.actor }}</td></tr>
 
-<tr><td><b>Genres</b></td><td><b>:</b></td><td>{{ page.genre }}</td></tr>
+<tr><td><b>Director</b></td><td><b>:</b></td><td><a href="/director/{{ page.director }}">{{ page.director }}</a></td></tr>
 
-<tr><td><b>Quality</b></td><td><b>:</b></td><td>{{ page.quality }}</td></tr>
+<tr><td><b>Actor</b></td><td><b>:</b></td><td><a href="/actor/{{ page.actor }}">{{ page.actor }}</a></td></tr>
 
-<tr><td><b>Language</b></td><td><b>:</b></td><td>{{ page.language }}</td></tr>
+<tr><td><b>Genres</b></td><td><b>:</b></td><td><a href="/genre/{{ page.genre }}">{{ page.genre }}</a></td></tr>
+
+<tr><td><b>Quality</b></td><td><b>:</b></td><td><a href="/quality/{{ page.quality }}">{{ page.quality }}</a></td></tr>
+
+<tr><td><b>Language</b></td><td><b>:</b></td><td><a href="/language/{{ page.language }}">{{ page.language }}</a></td></tr>
 
 <tr><td><b>Size</b></td><td><b>:</b></td><td>{{ page.size }}</td></tr>
 

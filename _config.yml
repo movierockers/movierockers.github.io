@@ -30,6 +30,7 @@ paginate_content:
     - language
     - genre
     - quality
+    - year
   auto: false
   separator: --page-break--
   permalink: /:num/
