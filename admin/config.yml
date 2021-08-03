@@ -159,8 +159,8 @@ collections:
         name: "body"
         widget: "markdown"
   - label: "Actors"
-    name: "actors"
-    folder: "_actors"
+    name: "actor"
+    folder: "actor"
     create: true
     editor:
       preview: false
@@ -179,8 +179,8 @@ collections:
         name: "slug"
         widget: "string"
   - label: "Directors"
-    name: "directors"
-    folder: "_directors"
+    name: "director"
+    folder: "director"
     create: true
     editor:
       preview: false
@@ -200,7 +200,7 @@ collections:
         widget: "string"
   - label: "Genre"
     name: "genre"
-    folder: "_genres"
+    folder: "genre"
     create: true
     editor:
       preview: false
@@ -220,7 +220,7 @@ collections:
         widget: "string"
   - label: "Language"
     name: "languages"
-    folder: "_languages"
+    folder: "language"
     create: true
     editor:
       preview: false
@@ -240,7 +240,7 @@ collections:
         widget: "string"
   - label: "Quality"
     name: "quality"
-    folder: "_quality"
+    folder: "quality"
     create: true
     editor:
       preview: false
@@ -309,6 +309,14 @@ collections:
       - label: "Quality"
         name: "quality"
         widget: "string"
+      - label: "Category"
+        name: "actor"
+        widget: "relation"
+        collection: "actor"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+        required: false
       - label: "Category"
         name: "category"
         widget: "relation"
