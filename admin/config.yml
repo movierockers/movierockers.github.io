@@ -22,7 +22,7 @@ collections:
         name: "title"
         widget: "string"
       - label: "Actor"
-        name: "actor"
+        name: "actors"
         widget: "relation"
         collection: "actor"
         searchFields: ["title"]
@@ -30,7 +30,7 @@ collections:
         displayFields: ["title"]
         required: false
       - label: "Director"
-        name: "director"
+        name: "directors"
         widget: "relation"
         collection: "director"
         searchFields: ["title"]
@@ -38,7 +38,7 @@ collections:
         displayFields: ["title"]
         required: false
       - label: "genre"
-        name: "genre"
+        name: "genres"
         widget: "relation"
         collection: "genre"
         searchFields: ["title"]
@@ -46,7 +46,7 @@ collections:
         displayFields: ["title"]
         required: false
       - label: "quality"
-        name: "quality"
+        name: "qualitys"
         widget: "relation"
         collection: "quality"
         searchFields: ["title"]
@@ -54,7 +54,7 @@ collections:
         displayFields: ["title"]
         required: false
       - label: "year"
-        name: "year"
+        name: "years"
         widget: "relation"
         collection: "year"
         searchFields: ["title"]
@@ -62,7 +62,7 @@ collections:
         displayFields: ["title"]
         required: false
       - label: "language"
-        name: "language"
+        name: "languages"
         widget: "relation"
         collection: "language"
         searchFields: ["title"]
