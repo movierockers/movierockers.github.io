@@ -158,6 +158,106 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+  - label: "Actors"
+    name: "actors"
+    folder: "_actors"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    preview_path: "actor/{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "actor"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+  - label: "Directors"
+    name: "directors"
+    folder: "_directors"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    preview_path: "director/{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: director
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+  - label: "Genre"
+    name: "genre"
+    folder: "_genres"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    preview_path: "genre/{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "genre"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+  - label: "Language"
+    name: "languages"
+    folder: "_languages"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    preview_path: "language/{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "language"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+  - label: "Quality"
+    name: "quality"
+    folder: "_quality"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    preview_path: "quality/{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "quality"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
   - label: "Categories"
     name: "categories"
     folder: "category"
