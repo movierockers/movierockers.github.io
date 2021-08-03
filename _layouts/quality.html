@@ -66,7 +66,7 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
 	    
                     {% for post in posts %}
-                        {% if post.actor == page.slug %}
+                        {% if post.quality == page.slug %}
 
 <div class="f" title="{{ post.title }} ({{ post.year }})"> <img src="/dir.gif" alt="{{ post.title }} Movies Download"> <a href="{{ post.url }}">{{ post.title }} ({{ post.year }})</a></div>
 
