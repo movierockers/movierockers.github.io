@@ -9,7 +9,7 @@ layout: null
     <loc>{{ site.url }}{{ item.url }}</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-	<lastmod>{{ site.time | date: "Y-%m-%d" }}</lastmod>
+	<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
 	
 	
 	
