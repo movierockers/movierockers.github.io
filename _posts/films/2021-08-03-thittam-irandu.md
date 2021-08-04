@@ -2,11 +2,11 @@
 date: 2021-08-03 23:41:08
 layout: imdb
 title: Thittam Irandu
-actors: Aishwarya Rajesh
-directors: Vignesh Karthick
-genres: Thriller
-qualitys: 480p
-years: "2021"
+actor: Aishwarya Rajesh
+director: Vignesh Karthick
+genre: Thriller
+quality: 480p
+year: "2021"
 language: Tamil
 category: Tamil Movies 2021
 imdb: tt12299714
