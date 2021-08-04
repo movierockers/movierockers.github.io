@@ -22,41 +22,41 @@ collections:
         name: "title"
         widget: "string"
       - label: "Actor"
-        name: "actors"
+        name: "actor"
         widget: "relation"
-        collection: "actor"
+        collection: "actors"
         searchFields: ["title"]
         valueField: "slug"
         displayFields: ["title"]
         required: false
       - label: "Director"
-        name: "directors"
+        name: "director"
         widget: "relation"
-        collection: "director"
+        collection: "directors"
         searchFields: ["title"]
         valueField: "slug"
         displayFields: ["title"]
         required: false
       - label: "genre"
-        name: "genres"
+        name: "genre"
         widget: "relation"
-        collection: "genre"
+        collection: "genres"
         searchFields: ["title"]
         valueField: "slug"
         displayFields: ["title"]
         required: false
       - label: "quality"
-        name: "qualitys"
+        name: "quality"
         widget: "relation"
-        collection: "quality"
+        collection: "qualitys"
         searchFields: ["title"]
         valueField: "slug"
         displayFields: ["title"]
         required: false
       - label: "year"
-        name: "years"
+        name: "year"
         widget: "relation"
-        collection: "year"
+        collection: "years"
         searchFields: ["title"]
         valueField: "slug"
         displayFields: ["title"]
@@ -273,7 +273,7 @@ collections:
         name: "body"
         widget: "markdown"
   - label: "Actors"
-    name: "actor"
+    name: "actors"
     folder: "_actor"
     create: true
     editor:
@@ -293,7 +293,7 @@ collections:
         name: "slug"
         widget: "string"
   - label: "Directors"
-    name: "director"
+    name: "directors"
     folder: "_director"
     create: true
     editor:
@@ -313,7 +313,7 @@ collections:
         name: "slug"
         widget: "string"
   - label: "Genre"
-    name: "genre"
+    name: "genres"
     folder: "_genre"
     create: true
     editor:
@@ -353,7 +353,7 @@ collections:
         name: "slug"
         widget: "string"
   - label: "Quality"
-    name: "quality"
+    name: "qualitys"
     folder: "_quality"
     create: true
     editor:
@@ -373,7 +373,7 @@ collections:
         name: "slug"
         widget: "string"
   - label: "Year"
-    name: "year"
+    name: "years"
     folder: "_year"
     create: true
     editor:
