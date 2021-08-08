@@ -3,7 +3,7 @@ date: 2021-08-08 09:43:44
 layout: imdb
 title: Aayirathil Oruvan
 actor: Karthik
-director: Unknown
+director: Selvaraghavan
 genre: Historical
 quality: 480p
 year: "2021"
