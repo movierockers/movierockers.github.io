@@ -6,7 +6,7 @@ actor: Karthik
 director: Selvaraghavan
 genre: Historical
 quality: 480p
-year: "2021"
+year: "2010"
 language: Tamil
 category: Tamil 2010 Movies
 imdb: tt1512888
