@@ -2,7 +2,7 @@
 date: 2021-08-11 16:19:55
 layout: collection
 category: Hollywood Movies
-title: The Kissing Booth
+title: The Kissing Booth Trilogy
 coldi:
   - title: The Kissing Booth (2018)
     url: /the-kissing-booth-1
