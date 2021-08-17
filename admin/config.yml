@@ -90,14 +90,6 @@ collections:
         valueField: "slug"
         displayFields: ["title"]
         required: false
-      - label: "Category"
-        name: "category"
-        widget: "relation"
-        collection: "categories"
-        searchFields: ["title"]
-        valueField: "slug"
-        displayFields: ["title"]
-        required: false
       - label: "IMDB ID"
         name: "imdb"
         widget: "string"
@@ -121,22 +113,6 @@ collections:
         name: "tags"
         hint: "Separate with commas. These will also be used as keywords for search engines."
         widget: "list"
-        required: false
-      - label: "Author"
-        name: "author"
-        widget: "relation"
-        collection: "authors"
-        displayFields: [display_name]
-        searchFields: [display_name]
-        valueField: "name"
-        required: false
-      - label: "Paginate"
-        name: "paginate"
-        widget: "boolean"
-        default: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
         required: false
   - label: "Season Collection"
     name: "sead"

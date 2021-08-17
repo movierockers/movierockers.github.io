@@ -87,21 +87,11 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 {% for post in paginator.posts %}
 	<div style=" text-transform: capitalize;" class="f">
 	
-<b>{{ post.title }}</b> <a href="{{ BASE_PATH }}{{ post.url }}"><span style="color: green;">Read More</span></a>
+<b>{{ post.title }}</b> - <a href="{{ BASE_PATH }}{{ post.url }}"><span style="color: green;">Read More</span></a>
 		</div>
 {% endfor %}  
 {% include pagination-home.html %}
-           </div>
-	
-	<div class="line">Downloads</div>
-	{% for item in site.menu %}
-    {% if item.title and item.url %}
-	
- <div class="f" title="{{ item.title }} movie download tamilrockers"> <img src="dir.gif" alt="{{ item.title }} movie download isaimini">
-<a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></div>
-    {% endif %}
-  {% endfor %}
-	
+           </div>	
 	<div class="line">Downloads</div>
 	{% for item in site.menu2 %}
     {% if item.title and item.url %}
