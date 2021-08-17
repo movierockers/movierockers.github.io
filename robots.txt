@@ -1,9 +1,6 @@
 User-agent: *
+Allow: /
 Disallow: /author/
-Allow: /category/
-Allow: /Moviesda/
+Disallow: /category/
 
-Sitemap: {{site.url}}/video.xml
-Sitemap: {{site.url}}/feed.xml
-Sitemap: {{site.url}}/category-sitemap.xml
-Sitemap: {{site.url}}/sitemap.xml
+sitemap: {{site.url}}/sitemap.xml
