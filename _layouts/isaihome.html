@@ -22,6 +22,7 @@
 <meta name="rating" content="General" />
 <meta name="robots" content="index, follow" />
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
 <style>
 body {padding: 0; margin:0 auto; max-width: 700px; font-family: Verdana; font-weight: normal; background: #f9f9f9; font-size: 13px;}
 a {text-decoration : none; color: #3b3b3b;}
@@ -66,6 +67,7 @@ border : 1px solid silver;
 </style>
 </head>
 <body>
+
 <div class="line"><font size="4px">{{ site.name }}</font><br/><small>Name Of Quality</small></div>
 <div class="bottom" align="center">
 Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="red">Telegram Channel</font></a> & Get Updates and Movies! 
@@ -86,6 +88,18 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 
 {% for post in paginator.posts %}
 	<div style=" text-transform: capitalize;" class="f">
+	
+	<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "{{ post.title }}",
+    "description": "Read about or download file in the topic of {{ post.title }}.Eplore and learn more",
+    "publisher": {
+        "@type": "Website",
+        "name": "{{ site.name }}"
+    }}
+</script>
 	
 <b>{{ post.title }}</b> - <a href="{{ BASE_PATH }}{{ post.url }}"><span style="color: green;">Read More</span></a>
 		</div>
@@ -146,7 +160,7 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 	<div class="form"><b>Moviesda 2021 Movies Download Moviesda Tamil 2021 Movies Download Moviesda.net 2021 Mobile Movies Download Moviesda 2021 HD Movies Download Moviesda 2021 Download MyMoviesda.Com Tamil Moviesda New 720p HD 5.1 Movies Download Tamil 2021 Movies Moviesda Download MyMoviesda Home Page Tamil 2021 Mobile Movies Download</b></div>
 </div>
 </div>
-<div class="line"> © Tentrockers<br/>All Right Reserved</div>
+<div class="line"> © {{ site.name }}<br/>All Right Reserved</div>
 	
 	
 
