@@ -1,6 +1,6 @@
 <!doctype html>
 <html 
-<head>
+<head prefix="og: http://ogp.me/ns# video: http://ogp.me/ns/video#">
 	    {% assign url = '' %}
     {% if paginator.page_trail %}
         {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
@@ -23,7 +23,15 @@
     <meta property="og:title" content="{{ page.title }} Movie Download Tamilrockers">
     <meta property="og:image" content="{{ page.poster }}">
     <meta property="og:description" content="{{ page.title }} movie download hd tamilrockers isaimini {{ page.title }} {{ page.language }} movie download {{ page.quality }} {{ page.year }}">
-    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:site_name" content="{{ site.name }}">	
+<meta property="og:type" content="video.movie" />
+<meta property="video:director" content="Team Tamilrockers">
+<meta property="video:release_date" content="{{ page.date }}">
+<meta property="og:video" content="{{ page.video }}">
+<meta property="og:video:secure_url" content="{{ page.video }}">
+<meta property="og:video:type" content="video/mp4">
+<meta property="video:tag" content="Drama">
+<meta name="theme-color" content="#141414">
 	
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -892,7 +900,16 @@ font-family: system-ui;
     </style>
 </head>
 
-	<body class="body">
+	
+	<body class="body" itemscope itemtype="https://schema.org/Movie">
+
+<meta itemprop="name" content="{{ page.title }}">
+<meta itemprop="image" content="{{ page.poster }}">
+<meta itemprop="dateCreated" content="{{ page.date }}">
+<meta itemprop="genre" content="Drama">
+<meta itemprop="director" content="Team Tamilrockers">
+<meta itemprop="author" content="{{ site.name }}">
+	
 <div class="amp-wrapper">
              <header itemscope itemtype="https://schema.org/WPHeader" class="site-header">
             <a href="{{ site.url }}" class="branding image-logo ">

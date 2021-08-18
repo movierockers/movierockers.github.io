@@ -59,6 +59,40 @@
 <meta itemprop="director" content="{{ page.director }}">
 <meta itemprop="author" content="{{ site.name }}">
 
+<script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "{{ page.title }}",
+        "description": "Watch {{ page.title }} Online Free HD Quality",
+        "url": "{{ url }}",
+        "duration": "PT1H56M0S",
+        "isFamilyFriendly": "http://schema.org/True",
+        "uploadDate": "{{ page.date | date_to_xmlschema }}",
+        "dateCreated": "{{ page.date | date_to_xmlschema }}",
+        "requiresSubscription": "http://schema.org/False",
+        "playerType": "HTML5 Flash",
+        "thumbnailUrl": "{{ page.poster }}",
+        "inLanguage": "en",
+        "contentUrl": "{{ page.video }}",
+        "embedUrl": "{{ page.video }}",
+        "width": "1280",
+        "height": "720",
+        "provider": {
+          "@type": "Organization",
+          "name": "Moviesda",
+          "logo": "{{ site.url }}/favicon.ico"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "{{ site.name }}",
+          "logo": "{{ site.url }}/favicon.ico",
+          "url": "{{ site.url }}"
+        },
+        "interactionCount": "4345353"
+        
+      }</script>
+
+
 <div class="line">
 <font size="4px">{{ site.name }}</font>
 <br/>
