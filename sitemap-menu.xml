@@ -39,7 +39,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 {% for item in site.actor %}
 <item>
 		<title>{{ item.name }}</title>
-		<link>{{ item.url }}</link>
+		<link>{{ site.url }}/{{ item.url }}</link>
 		
 		<dc:creator><![CDATA[{{ site.name }}]]></dc:creator>
 		<pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
@@ -60,7 +60,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 {% for item in site.director %}
 <item>
 		<title>{{ item.name }}</title>
-		<link>{{ item.url }}</link>
+		<link>{{ site.url }}/{{ item.url }}</link>
 		
 		<dc:creator><![CDATA[{{ site.name }}]]></dc:creator>
 		<pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
@@ -81,7 +81,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 {% for item in site.quality %}
 <item>
 		<title>{{ item.name }}</title>
-		<link>{{ item.url }}</link>
+		<link>{{ site.url }}/{{ item.url }}</link>
 		
 		<dc:creator><![CDATA[{{ site.name }}]]></dc:creator>
 		<pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
@@ -103,7 +103,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 {% for item in site.year %}
 <item>
 		<title>{{ item.name }}</title>
-		<link>{{ item.url }}</link>
+		<link>{{ site.url }}/{{ item.url }}</link>
 		
 		<dc:creator><![CDATA[{{ site.name }}]]></dc:creator>
 		<pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
@@ -125,7 +125,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 {% for item in site.language %}
 <item>
 		<title>{{ item.name }}</title>
-		<link>{{ item.url }}</link>
+		<link>{{ site.url }}/{{ item.url }}</link>
 		
 		<dc:creator><![CDATA[{{ site.name }}]]></dc:creator>
 		<pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
@@ -147,7 +147,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 {% for item in site.genre %}
 <item>
 		<title>{{ item.name }}</title>
-		<link>{{ item.url }}</link>
+		<link>{{ site.url }}/{{ item.url }}</link>
 		
 		<dc:creator><![CDATA[{{ site.name }}]]></dc:creator>
 		<pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
