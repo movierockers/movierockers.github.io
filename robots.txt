@@ -6,4 +6,11 @@ Allow: /
 Disallow: /author/
 Disallow: /category/
 
-sitemap: {{site.url}}/sitemap.xml
+Sitemap: {{site.url}}/sitemap.xml
+Sitemap: {{site.url}}/sitemap/actor.xml
+Sitemap: {{site.url}}/sitemap/director.xml
+Sitemap: {{site.url}}/sitemap/year.xml
+Sitemap: {{site.url}}/sitemap/quality.xml
+Sitemap: {{site.url}}/sitemap/language.xml
+Sitemap: {{site.url}}/sitemap/genre.xml
+Sitemap: {{site.url}}/sitemap/video-sitemap.xml
