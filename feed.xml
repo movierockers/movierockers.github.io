@@ -1,14 +1,14 @@
 ---
 layout: null
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:blogger="http://schemas.google.com/blogger/2008" xmlns:georss="http://www.georss.org/georss" xmlns:gd="http://schemas.google.com/g/2005" xmlns:thr="http://purl.org/syndication/thread/1.0"
+    version="2.0">
+    <channel>
     <title>{{ site.title | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.posts limit:10000 %}
@@ -16,8 +16,8 @@ layout: null
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.title | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+<atom:updated>{{ post.date | date_to_xmlschema }}</atom:updated>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
       </item>
     {% endfor %}
   </channel>
