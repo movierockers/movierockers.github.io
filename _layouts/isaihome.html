@@ -65,6 +65,33 @@ border : 1px solid silver;
 .error { background: #fff8cc; border: 1px solid #ffe222; padding: 10px; font-weight: normal; color: red; }
 .isai { background-color: #f1f1f1; color: #444444; padding: 3px; font-size: 13px; font-family: arial,sans-serif; margin-top: 0px; margin-bottom: 0px; padding-left: 5px; padding-top: 5px; }
 </style>
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}"
+      },
+      "headline": "{{ site.title }}",
+      "image": "{{ site.title }}/favicon.ico",
+      "datePublished": "{{ site.time }}",
+      "dateModified": "{{ site.time }}",
+      "author": {
+        "@type": "Website",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/favicon.ico"
+        }
+      }
+    }
+    </script>
 </head>
 <body>
 
