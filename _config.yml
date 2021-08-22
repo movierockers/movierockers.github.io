@@ -16,7 +16,7 @@ paginate_path: /page/:num/
 sass:
   style: compressed
 markdown: kramdown
-url: https://moviesda.xyz
+url: https://www.moviesda.xyz
 facebook_username: facebook_username
 sent_message_url: /contact/message-sent/
 paginate_content:
