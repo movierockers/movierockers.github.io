@@ -6,19 +6,6 @@ layout: null
 xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
 xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"> 
 
-       {% for page in site.pages %}
-        <url>
-            <loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
-            {% if page.layout == 'main' %}
-                <changefreq>weekly</changefreq>
-                <priority>0.8</priority>
-                <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-            {% else %}
-                <changefreq>monthly</changefreq>
-                <priority>0.8</priority>
-            {% endif %}
-        </url>
-    {% endfor %}
         {% for post in site.posts limit:10000 %}
 <url>
 <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
