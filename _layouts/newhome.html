@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{site.title}}</title>
+<meta http-equiv="last-modified" content="{{ site.time | date_to_xmlschema }}">
+<meta name="description" content="{{site.description}}">
+<meta name="keywords" content="isaimini, moviesda, kothamovies, jiorockers, tamilrockers, tamilmv, tamilblasters, tamilvaathi, tamilgun, tamilyogi, isaitamil, playtamil, masstamilan, starmusic, hotstar, disney">
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="og:title" content="{{site.title}}">
+<meta property="og:description" content="{{site.description}}">
+<meta property="og:url" content="{{site.url}}">
+<meta property="og:image" content="/assets/img/blog-image.png">
+<meta charset="UTF-8" />
+<meta name="google" content="notranslate" />
+<meta http-equiv="Content-Language" content="en_US" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="Rating" content="General">
+<meta name="audience" content="all">
+<meta name="theme-color" content="#0085ef">
+<meta name="msapplication-TileColor" content="#0085ef">
+<meta name="mobile-web-app-capable" content="yes">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="copyrightYear" content="{{ 'now' | date: "%Y" }}">
+<meta name="clickaine-site-verification" content="a2654d1f84267a57005449f5e0cd9d4fb431da3cb9ce1f5b345c61b467d9bc2e2dc23ea77c8bb692a8ec24c54aff110f8e59e8d6e34936cfe86cd915fdfd54b5">
+<meta name="google-site-verification" content="VT3FA1mIjtAO3LpXrohFYkj39_GxACEkPPp0ixDgEvU" />
+<link rel="stylesheet" media="all" href="/assets/css/mass.css" />  
+<link rel="alternate" type="application/rss+xml" title="{{site.name}} RSS Feed" href="/feed.xml">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="{{site.url}}" rel="canonical" />
+</head>
+<body class="light">
+     <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3850950,document.body||document.documentElement)</script>
+     {% include line.html %}
+     <noscript> <span>
+          <span>    Enable Javascript To View This Page </span>
+          <style>
+               .box{display:none; !important}
+          </style>
+     </noscript>
+  <div class="box cen">
+       
+<section class="bots ib">
+  
+  <div class="home-page">
+    <div class="botlist">
+   {% include massrecent.html %}
+</div>
+</div>
+        <section class="wid ctr" style="margin-top: 10px;margin-bottom: 10px;">
+<h4 class="wtitle cen">Torrents</h4>
+<ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+  
+    </ul>          
+</section>
+     <section class="wid ctr" style="margin-top: 10px;margin-bottom: 10px;">
+<h4 class="wtitle cen">Recent News</h4>
+          
+</section>
+     
+     
+     
+</section>
+        
+    <section class="sbar ib cen">
+  <div id="sidebar" class="cen">
+    <section class="wid ctr">
+      <h4 class="wtitle cen">Follow us</h4>
+      <div class="social-icons cen">
+        <div class="s-icon telegram">
+          <a href="https://telegram.me/isaiminidownload" target="_blank" rel="nofollow">
+          <svg xmlns="http://www.w3.org/2000/svg" height="75" width="75" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#37aee2"></rect><path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144"></path><path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34"></path><path fill="#f6fbfe" d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+      
+    <section class="wid ctr left">
+    <h4 class="wtitle cen">Recent Updates</h4>
+          <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+{% for post in site.posts limit:15 %}  
+  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ post.url }}">{{ post.seotitle }}</a></li>  
+{% endfor %}  
+        
+        
+        
+        
+        
+    </ul>
+      
+  </section>
+    
+    <section class="wid ctr left">
+    <h4 class="wtitle cen">Categories</h4>
+          <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+{% assign categories_list = site.categories %}
+  {% if categories_list.first[0] == null %}
+    {% for category in categories_list %}
+      <li itemprop="name"><a itemprop="url" href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a></li>
+    {% endfor %}
+  {% else %}
+    {% for category in categories_list %}
+      <li itemprop="name"><a itemprop="url" href="{{site.url}}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
+    {% endfor %}
+  {% endif %}
+{% assign categories_list = nil %}
+</ul>
+          <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+{% for item in site.articles %}
+  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }}</a></li>  
+{% endfor %}  
+        
+        
+        
+        
+        
+    </ul>
+         </section>
+    
+</div>
+</section>
+  </div>
+  
+  
+<p class="cen">
+With ♥ from {{site.name}} Team - {{ 'now' | date: "%Y" }}.
+</p>
+</body>
+</html>
