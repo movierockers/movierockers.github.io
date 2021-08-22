@@ -27,7 +27,7 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <video:requires_subscription>yes</video:requires_subscription>
 <video:uploader info="{{ site.url }}">{{ site.name }}</video:uploader>
 <video:live>no</video:live>
-<video:tag></video:tag>
+<video:tag>{{ post.genre }}</video:tag>
 </video:video>
 <changefreq>hourly</changefreq>
 </url>
