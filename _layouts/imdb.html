@@ -96,7 +96,20 @@
         
       }</script>
 </head>
-<body class="light">
+
+	
+	<body  class="light" itemscope itemtype="https://schema.org/Movie">
+
+<meta itemprop="name" content="{{ page.title }}">
+<meta itemprop="image" content="{{ page.poster }}">
+<meta itemprop="dateCreated" content="{{ page.date }}">
+<meta itemprop="genre" content="{{ page.genre }}">
+<meta itemprop="director" content="{{ page.director }}">
+<meta itemprop="author" content="{{ site.name }}">
+	
+	
+	
+	
    <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3850950,document.body||document.documentElement)</script>
   {% include line.html %}
  <div class="bcrumbs bold box" style="margin-top: 10px;">
