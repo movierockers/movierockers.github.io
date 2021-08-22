@@ -1,16 +1,23 @@
 ---
 layout: null
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
-xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>{{ site.url }}</loc>
+<lastmod>{{ site.time }}</lastmod>
+<changefreq>hourly</changefreq>
+<priority>1.0</priority>
+</url>
+
 
         {% for post in site.posts limit:10000 %}
 <url>
 <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
   <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
   <priority>0.8</priority>
+<changefreq>hourly</changefreq>
+
 </url>
           {% endfor %}
     
