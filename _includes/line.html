@@ -1,0 +1,74 @@
+<div class="line"><font size="4px">{{site.name}}</font><br><small>hotstar.uno</small></div>
+<style>
+.line{background-color: #308bcf; color: #ffffff; font-weight: bold; padding: 10px 0px 10px 0px; text-align: center; text-decoration: none; margin-bottom: 0px; font-size: small;}
+.f {color: #4f4f4f ; background: #f9f9f9; padding-top: 8px; padding-left: 3px; padding-bottom: 2px; font-size: 14px; text-align: left; border-bottom: 1px dotted #afcddc; }
+</style>
+ <div class="Adz" style=" margin-top: 20px; ">
+<div class="cen">
+    <section>
+      <section class="cen">
+        
+        
+        <div class="cen">
+
+          <!-- Search input field -->
+  <div class="main-search form-group mb-0 border-bottom">
+  <div class="input-group">
+    <form action="/search" method="get">
+    <input id="search" name="main_input" class="form-control border-0" style=" width: 50%; font-size: medium; height: 30px; " placeholder="type to search" type="text">
+   </form>
+      <div class="input-group-append">
+      <span class="input-group-text border-0"><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div>
+  </div>
+</div>
+          
+          
+        </div>
+      </section>
+      
+      
+      <section class="cen">
+
+        <div align="center" >
+<!-- Search result container -->
+<div class="search-results position-absolute" style="display: none;">
+      <ul id="results" align="center" class="search-results-ul card shadow border border-top-0"></ul>
+</div>
+        </div>
+      </section>
+      
+    </section>
+  </div>
+
+</div>
+
+
+<!-- Script pointing to Jekyll Instant Search js -->
+  <script src="/assets/js/search-script.js" type="text/javascript"></script>
+
+  <!-- Jekyll Instant Search Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search'),
+    resultsContainer: document.getElementById('results'),
+    searchResultTemplate: '<div class="f" title="{seotitle}"> <a href="{url}">{seotitle} ({year}) {language} [{size}] </a></div>',
+    noResultsText: '<li><p>No results found!</p></li>',
+    json: '/search.json'
+  })
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- show site search results -->
+<script>
+  $(document).ready(function() {
+    $('#search').on('blur', function() {
+    $('.search-results').fadeOut('medium');
+});
+  $('#search').on('focus', function() {
+      $('.search-results').show();
+  });
+
+    });
+  </script>
