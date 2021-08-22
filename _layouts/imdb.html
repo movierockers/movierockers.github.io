@@ -32,8 +32,8 @@
     {% endif %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ page.title }} Movie Download - {{ site.name }}</title>
-<meta property="description" content="{{ page.title }} Full Movie Download , {{ page.title }} Tamil HD Movie Download TamilRockers, {{ page.title }} Watch Online TamilRockers, {{ page.title }} Movie Download TamilRockers">
+<title>{{ page.title }} ({{ page.year }}) Full Movie Download in {{ page.language }} HD Tamilrockers - {{ site.name }}</title>
+<meta property="description" content="{{ page.title }} Full Movie Download , {{ page.title }} {{ page.language }} HD Movie Download TamilRockers, {{ page.title }} Watch Online TamilRockers, {{ page.title }} Movie Download TamilRockers">
 <meta property="og:title" content="{{ page.title }} Movie Download - {{ site.name }}" />
 <meta property="og:description" content="{{ page.title }} Full Movie Download , {{ page.title }} Tamil HD Movie Download TamilRockers, {{ page.title }} Watch Online TamilRockers, {{ page.title }} Movie Download TamilRockers">
 <meta property="og:site_name" content="{{ site.name }}">
@@ -46,24 +46,28 @@
 <meta property="og:video:secure_url" content="{{ page.video }}">
 <meta property="og:video:type" content="video/mp4">
 <meta property="video:tag" content="{{ page.genre }}">
-<meta name="theme-color" content="#141414">
-
-<link rel="stylesheet" href="/assets/css/isai.css">
-</head>
-<body itemscope itemtype="https://schema.org/Movie">
-
-<meta itemprop="name" content="{{ page.title }}">
-<meta itemprop="image" content="{{ page.poster }}">
-<meta itemprop="dateCreated" content="{{ page.date }}">
-<meta itemprop="genre" content="{{ page.genre }}">
-<meta itemprop="director" content="{{ page.director }}">
-<meta itemprop="author" content="{{ site.name }}">
-
-<script type="application/ld+json">{
+<meta charset="UTF-8" />
+<meta name="google" content="notranslate" />
+<meta http-equiv="Content-Language" content="en_US" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="Rating" content="General">
+<meta name="audience" content="all">
+<meta name="theme-color" content="#0085ef">
+<meta name="msapplication-TileColor" content="#0085ef">
+<meta name="mobile-web-app-capable" content="yes">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="copyrightYear" content="{{ 'now' | date: "%Y" }}">
+<link rel="stylesheet" media="all" href="/assets/css/mass.css" /> 
+<link rel="alternate" type="application/rss+xml" title="{{site.name}} RSS Feed" href="/feed.xml">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="{{ url }}" rel="canonical" />
+    <script type="application/ld+json">{
         "@context": "http://schema.org",
         "@type": "VideoObject",
-        "name": "{{ page.title }}",
-        "description": "Watch {{ page.title }} Online Free HD Quality",
+        "name": "{{ page.title }} Full Movie Watch or Download For Free on {{ site.name }}",
+        "description": "Watch {{ page.title }} Online Free HD Quality on {{ site.name }}",
         "url": "{{ url }}",
         "duration": "PT1H56M0S",
         "isFamilyFriendly": "http://schema.org/True",
@@ -79,7 +83,7 @@
         "height": "720",
         "provider": {
           "@type": "Organization",
-          "name": "Moviesda",
+          "name": "{{ site.name }}",
           "logo": "{{ site.url }}/favicon.ico"
         },
         "author": {
@@ -91,107 +95,124 @@
         "interactionCount": "4345353"
         
       }</script>
+</head>
 
+	
+	<body  class="light" itemscope itemtype="https://schema.org/Movie">
 
-<div class="line">
-<font size="4px">{{ site.name }}</font>
-<br/>
-<small>Name Of Quality</small></div>
-<div class="bottom" align="center">
-Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="red">Telegram Channel</font></a> & Get Updates and Movies! 
-        
-		   </div>
-
-<div class="line">Movie Information</div>
-
-<div class="isai" align="left">
-<div class="pr">
-<img style="margin-left: 7px;" typeof="foaf:Image" src="{{ page.poster }}" width="153px" height="180px" alt="{{ page.title }} ({{ page.year }}) Movie Poster" title="{{ page.title }} ({{ page.year }}) Movie Poster" class="tbl"><table cellspacing="5">
-
-<tbody><tr><td><b>Movie</b></td><td><b>:</b></td><td>{{ page.title }}</td></tr>
-
-<tr><td><b>Year</b></td><td><b>:</b></td><td>{{ page.year }}</td></tr>
-
-
-<tr><td><b>Director</b></td><td><b>:</b></td><td>{{ page.director }}</td></tr>
-
-<tr><td><b>Actor</b></td><td><b>:</b></td><td>{{ page.actor }}</td></tr>
-
-<tr><td><b>Genres</b></td><td><b>:</b></td><td>{{ page.genre }}</td></tr>
-
-<tr><td><b>Quality</b></td><td><b>:</b></td><td>{{ page.quality }}</td></tr>
-
-<tr><td><b>Language</b></td><td><b>:</b></td><td>{{ page.language }}</td></tr>
-
-<tr><td><b>Size</b></td><td><b>:</b></td><td>{{ page.size }}</td></tr>
-
-
-<tr><td><b>Rating</b></td><td><b>:</b></td>
-
-<td>
-<span class="imdbRatingPlugin" data-user="ur105755917" data-title="{{ page.imdb }}" data-style="p4">
+<meta itemprop="name" content="{{ page.title }}">
+<meta itemprop="image" content="{{ page.poster }}">
+<meta itemprop="dateCreated" content="{{ page.date }}">
+<meta itemprop="genre" content="{{ page.genre }}">
+<meta itemprop="director" content="{{ page.director }}">
+<meta itemprop="author" content="{{ site.name }}">
+	
+	
+	
+	
+   <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3850950,document.body||document.documentElement)</script>
+  {% include line.html %}
+ <div class="bcrumbs bold box" style="margin-top: 10px;">
+  <div itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList"><div itemscope="itemscope" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a class="" itemprop="item" href="/"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></div> » <div itemscope="itemscope" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a class="" itemprop="item" href="/"><span itemprop="name">Movie</span></a><meta itemprop="position" content="2"></div> » <div itemscope="itemscope" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">{{page.title}}</span><meta itemprop="position" content="3"></div></div>
+</div>
+<div class="box cen">
+  <section class="bots ib post ctr wrapper cen">
+    <div class="page-content left">
+      <div class="pad10">
+  <header>
+    <h1>{{page.title}} {{page.language}} movie HD download {{site.name}}</h1>
+    <h2 class="normal">Download {{page.title}} {{page.year}} {{page.language}} movie HD Moviesda</h2>
+  </header>
+  <article class="post-content">
+    <div id="movie-image">
+      <figure>
+        <picture>
+          <source srcset="{{page.poster}}" type="image/webp">
+          <source srcset="{{page.poster}}" type="image/jpeg">
+          <img alt="{{page.title}} movie poster" style=" height: auto !important; " title="{{page.title}} Movie Poster" src="{{page.image}}" loading="lazy">
+        </picture>
+        <figcaption class="cen">{{page.title}} Movie Poster</figcaption>
+      </figure>
+    </div>
+    <fieldset id="movie-handle">
+      <legend class="bluer cen">Movie Information</legend>
+      <b>Language:</b> {{ page.language }}<br>
+      <b>Size:</b> {{ page.size }}<br>
+      <b>Year:</b> {{ page.year }}<br>
+      <b>Actor:</b> {{ page.actor }}<br>
+      <b>Director:</b> {{ page.director }}<br>
+      <b>Quality:</b> {{ page.quality }}<br>        
+      <b>Genre:</b> {{ page.genre }}<br>
+      <b>Rating:</b> <span class="imdbRatingPlugin" data-user="ur105755917" data-title="{{ page.imdb }}" data-style="p4">
 <a href="https://www.imdb.com/title/{{ page.imdb }}">
-</a><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_31x14.png" alt=" {{ page.title }} ({{ page.year }}) on IMDb" /></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
-</td>
-</tr>
+</a></span>
+<script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script><br>
+      <b>Updated:</b> {{ page.date }}<br>
+    </fieldset>
+      
+    <div class="rating cen">
+      <p>
+<!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="padded" site_id="60140c176fd08bc7267d887f" data-ef_voting="push" data-white_label="true" data-show_dislike_label="true" data-voting_cancelable="false" data-counter_clickable="true" data-counter_frmt="km" data-popup_disabled="true" data-popup_dislike="true" data-share_enabled="false" data-loader_image="https://likebtn.com/i/loader-small.gif?v=39" data-tooltip_enabled="false"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
+      </p>
+    </div>
+    <div class="cen">
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div class="ziparea normal">
+          <span class="bold uline">Download {{ page.title }} movie download HD {{page.language}}rockers</span><br>
+          <table id="tlist" class="firstleft">
+    <tbody content="1">
+        <tr>
+            <th id="track">Title</th>
+            <th id="play">Download</th>
+        </tr>
+          
+       <tr>
+            <td><span><h2 class="nostyle"><span><link href="{{item.url}}"> <a href="{{item.url}}" title="Download {{page.title}} movie HD">{{page.title}}</a> </span></h2>
+                <br><b>Quality: </b><span>{{page.quality}}</span><br><b>Size: </b><span>{{page.size}}</span> </span>
+            </td>
+         <td>
+             <a class="dlink anim" href="{{page.video}}" rel="nofollow" title="Download {{page.title}} movie HD">Download</a>
+            </td>
+            
+        </tr>     
+             
+              </tr>
+    </tbody>
+</table>
+        </div>
+      
+      
 
-<tr><td><b>Updated</b></td><td><b>:</b></td><td>{{ page.date }}</td></tr>
-
-</tbody></table></div></div>
-<div class="line">Download Section</div>
-
-
-<div class="f" title="{{ page.title }} (Original)">
-<img src="/dir.gif" alt="{{ page.title }} movie download Amazon Prime Video">
-<a href="//dopansearor.com/4/4456883">Download on Prime Video</a>
-</div>
-
-<div class="f" title="{{ page.title }} (Original)">
-<img src="/dir.gif" alt="{{ page.title }} movie download Neflix">
-<a href="//dopansearor.com/4/4456883">Watch on Netflix</a>
-</div>
-
-<div class="f" title="{{ page.title }} (Original)">
-<img src="/dir.gif" alt="{{ page.title }} movie download Jio Cinema">
-<a href="//dopansearor.com/4/4456883">Watch on Jio Cinema</a>
-</div>
-
-<div class="f" title="{{ page.title }} (Original)">
-<img src="/dir.gif" alt="{{ page.title }} movie download Jio Cinema">
-<a href="//dopansearor.com/4/4456883">Watch on MX Player</a>
-</div>
-
-
-
-<div class="f" title="{{ page.title }} (Original)">
-<img src="/dir.gif" alt="{{ page.title }} movie download moviesda">
-<a href="{{ page.video }}">Download Server 1</a>
-</div>
-
-<div class="f" title="{{ page.title }} (Original)">
-<img src="/dir.gif" alt="{{ page.title }} movie download Jio Cinema">
-<a href="//dopansearor.com/4/4456883">Watch on Disney+ Hotstar</a>
-</div>
-
-<div class="aut">Page Tags :</div>
-
-
-<font color="green">
+      <h4 class="bold uline">Incoming Search Terms:</h4>
 <ul>
       <li>{{ page.title }} Movie Download isaimini</li>
-      <li>{{ page.title }} Movie Download tamilrockers</li>
-       <li>{{ page.title }} Movie Download tamilgun</li>
-       <li>{{ page.title }} Movie Download tamilmv</li>
+      <li>{{ page.title }} Movie Download {{page.language}}rockers</li>
+       <li>{{ page.title }} Movie Download {{page.language}}gun</li>
+       <li>{{ page.title }} Movie Download {{page.language}}mv</li>
        <li>{{ page.title }} Movie Download isaiminiweb</li>
        <li>{{ page.title }} Movie Download isaiminida</li>
        <li>{{ page.title }} Movie Download isaiminipa</li>
-       <li>{{ page.title }} Movie Download tamildbox</li>
+       <li>{{ page.title }} Movie Download {{page.language}}dbox</li>
        <li>{{ page.title }} Movie Download moviesdaweb</li>
        <li>{{ page.title }} Movie Download moviesda</li>
        <li>{{ page.title }} Movie Download marina rockers</li>
        <li>{{ page.title }} Movie Download sri rockers</li>
        <li>{{ page.title }} Movie Download kuttymovies</li>
-       <li>{{ page.title }} Movie Download cooltamil</li>
+       <li>{{ page.title }} Movie Download cool{{page.language}}</li>
        <li>{{ page.title }} Movie Download Youtube</li>
        <li>{{ page.title }} Movie Download Disney+ Hotstar</li>
        <li>{{ page.title }} Movie Download Netflix</li>
@@ -203,8 +224,8 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
        <li>{{ page.title }} Movie Download BIGFlix</li>
        <li>{{ page.title }} Movie Download TnMoviez</li>
        <li>{{ page.title }} Movie Download isaidub</li>
-       <li>{{ page.title }} Movie Download orutamil</li>
-       <li>{{ page.title }} Movie Download in Tamil</li>
+       <li>{{ page.title }} Movie Download oru{{page.language}}</li>
+       <li>{{ page.title }} Movie Download in {{page.language}}</li>
        <li>{{ page.title }} Movie Download in Hindi</li>
        <li>{{ page.title }} Movie Download in Telugu</li>
        <li>{{ page.title }} Movie Download in Malayalam</li>
@@ -213,24 +234,82 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
        <li>{{ page.title }} Movie Download telegram</li>
        <li>{{ page.title }} Movie Download telegram link</li>
        <li>{{ page.title }} Movie Download isaiminimob</li>
-       <li>{{ page.title }} Movie Download tamilblasters</li>
-       <li>{{ page.title }} Movie Download tamilplay</li>
+       <li>{{ page.title }} Movie Download {{page.language}}blasters</li>
+       <li>{{ page.title }} Movie Download {{page.language}}play</li>
        <li>{{ page.title }} Movie Download jiorockers</li>
        <li>{{ page.title }} Movie Download movierulz</li>
        <li>{{ page.title }} Movie Download kotha movies</li>
       </ul>
+      
+      
+      
+  </article>
+</div>
+<section class="ctr wid">
+        <h1 class="wtitle cen em1">Tags</h1>
+   
+        <div class="tags">
+           <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+                                            {% for tag in page.tags %}
+                                                {% if tag != "" %}
+                                                   <li itemprop="name"> <a itemprop="url" href="{{ site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }} Movies Download</a></li>
+                                                {% endif %}
+                                            {% endfor %}
+              </ul>
+                                        </div>
+      </section>
 
-{{ page.title }} Full Movie Download {{ page.title }} HD Movie Download {{ page.title }} Movie H
-D Download {{ page.title }} {{ page.language }} Full Movie Free Download Moviesda.in {{ page.title }} Full Movie 1080p HD &amp; 720 HD TamilRockers TamilGun Download {{ page.title }} Full HD Movie isaimini Download {{ page.title }} Mp4 HD Movie Download</font>
 
 
-<div class="bottom"><a href="/">Home</a>
-|
-<a href="/contact.xhtml">Contact Us</a>
-|
- <a href="/dmca.xhtml">DMCA</a></div>
+    </div>
+  </section>
+  <section class="sbar ib cen">
+    <div id="sidebar" class="cen">
+    <section class="wid ctr">
+      <h4 class="wtitle cen">Follow us</h4>
+      <div class="social-icons cen">
+        <div class="s-icon telegram">
+          <a href="https://telegram.me/isaiminidownload" target="_blank" rel="nofollow">
+          <svg xmlns="http://www.w3.org/2000/svg" height="75" width="75" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#37aee2"></rect><path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144"></path><path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34"></path><path fill="#f6fbfe" d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  <section class="wid ctr left">
+    <h4 class="wtitle cen">Recent Updates</h4>
+    <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+        
+        
+        
+        
+{% for post in site.posts limit:15 %}  
+  <li itemprop="name"><a itemprop="url" href="{{ BASE_PATH }}{{ post.url }} ({{ post.year }})">{{ post.title }}</a></li>  
+{% endfor %}  
+        
+        
+        
+        
+        
+    </ul>
+  </section>
+        <section class="wid ctr left">
+    <h4 class="wtitle cen">Movies By Actors</h4>
+          <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+{% for item in site.actor %}
+      <li itemprop="name"><a itemprop="url" href="{{ item.url }}">{{ item.title }} Movies Download</a></li>
+    {% endfor %} 
+</ul>
+         </section>
+    
+    
+  
+</div>
 
-<div class="line"> © {{ site.name }}<br/>All Right Reserved</div>
+  </section>
+</div>
+<p class="cen">
+With ♥ from {{site.name}} Team - {{ 'now' | date: "%Y" }}.
+</p>
 	<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4428849,document.body||document.documentElement)</script>
 	
 <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4428849,document.body||document.documentElement)</script>
