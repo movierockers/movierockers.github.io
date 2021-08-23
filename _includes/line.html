@@ -37,7 +37,14 @@ header .headerLeft{margin-right:15px}
 @media screen and (max-width:480px){
 .scrollMenu{font-size:12px}
 }
-.scrollMenu a{text-decoration: unset; color: black; font-family: system-ui;}
+nav ul {
+    height: auto !important;
+}
+.scrollMenu a {
+    text-decoration: unset;
+    color: black !important;
+    font-family: system-ui !important;
+}
 .scrollMenu ul:after{content:'';padding:0 10px}
 .scrollMenu{background-color:#fefefe;overflow-x:auto;-ms-overflow-style: none;-webkit-overflow-scrolling:touch; box-shadow:0 10px 15px -5px rgba(0,0,0,.03); font-size:97%}
 .scrollMenu ul{display:flex;margin:0;padding:0;list-style:none;white-space:nowrap}
