@@ -29,6 +29,33 @@
 <link rel="alternate" type="application/rss+xml" title="{{site.name}} RSS Feed" href="/feed.xml">
 <link rel="shortcut icon" href="/favicon.ico">
 <link href="{{site.url}}" rel="canonical" />
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}"
+      },
+      "headline": "{{ site.title }}",
+      "image": "{{ site.url }}/favicon.ico",
+      "datePublished": "{{ site.time }}",
+      "dateModified": "{{ site.time }}",
+      "author": {
+        "@type": "Website",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/favicon.ico"
+        }
+      }
+    }
+    </script>
 </head>
 <body class="light">
      <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3850950,document.body||document.documentElement)</script>
