@@ -105,16 +105,17 @@
     </div>
     <fieldset id="movie-handle">
       <legend class="bluer cen">Movie Information</legend>
-      <b>Language:</b> {{ page.language }}<br>
+      <b>Movie Name:</b> {{ page.title }}<br>
+      <b>Language:</b> <a href='{{ site.url }}/language/{{ page.language | slugify }}'>{{ page.language }}<br>
       <b>Size:</b> {{ page.size }}<br>
-      <b>Year:</b> {{ page.year }}<br>
-      <b>Actor:</b> {{ page.actor }}<br>
+      <b>Year:</b> <a href='{{ site.url }}/year/{{ page.year | slugify }}'>{{ page.year }}<br>
+      <b>Actor:</b> <a href='{{ site.url }}/actor/{{ page.actor | slugify }}'>{{ page.actor }}<br>
       <b>Director:</b> <a href='{{ site.url }}/director/{{ page.director | slugify }}'>{{ page.director }}</a><br>
-      <b>Quality:</b> {{ page.quality }}<br>        
-      <b>Genre:</b> {{ page.genre }}<br>
-      <b>Rating:</b> <span class="imdbRatingPlugin" data-user="ur105755917" data-title="{{ page.imdb }}" data-style="p4">
-<a href="https://www.imdb.com/title/{{ page.imdb }}">
-</a></span>
+      <b>Quality:</b> <a href='{{ site.url }}/quality/{{ page.quality | slugify }}'>{{ page.quality }}<br>        
+      <b>Genre:</b> <a href='{{ site.url }}/genre/{{ page.genre | slugify }}'>{{ page.genre }}<br>
+      <b>Rating:</b> <a href="https://www.imdb.com/title/{{ page.imdb }}"><span class="imdbRatingPlugin" data-user="ur105755917" data-title="{{ page.imdb }}" data-style="p4">
+
+</span></a>
 <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script><br>
       <b>Updated:</b> {{ page.date }}<br>
     </fieldset>
