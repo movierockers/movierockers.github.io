@@ -4,6 +4,11 @@ medium_username: medium_username
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
+  - jekyll/tagging
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_page_data:
+  sitemap: false
 highlighter: rouge
 twitter_username: twitter_username
 use_logo: false
