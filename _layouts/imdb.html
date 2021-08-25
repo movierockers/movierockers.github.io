@@ -109,7 +109,7 @@
       <b>Size:</b> {{ page.size }}<br>
       <b>Year:</b> {{ page.year }}<br>
       <b>Actor:</b> {{ page.actor }}<br>
-      <b>Director:</b> {{ page.director }}<br>
+      <b>Director:</b> <a href="{{ site.url }}/director{{ "{{ page.director }}" | slugify }}">{{ page.director }}</a><br>
       <b>Quality:</b> {{ page.quality }}<br>        
       <b>Genre:</b> {{ page.genre }}<br>
       <b>Rating:</b> <span class="imdbRatingPlugin" data-user="ur105755917" data-title="{{ page.imdb }}" data-style="p4">
