@@ -29,6 +29,8 @@
 <link rel="alternate" type="application/rss+xml" title="{{site.name}} RSS Feed" href="/feed.xml">
 <link rel="shortcut icon" href="/favicon.ico">
 <link href="{{site.url}}" rel="canonical" />
+         <script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
      <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,6 +73,26 @@
 <section class="bots ib">
   
   <div class="home-page">
+       
+       
+       <div class="tamilmv">
+       {% for post in site.posts limit:20 %} 
+            
+ <li style="padding: 10px;display: block;border-bottom-width: 1px; border-bottom-style: solid;border-color: rgba(0,0,0,0.15);">
+<a style="color: black;text-decoration: none;" href="{{ BASE_PATH }}{{ post.url }}">
+     <span style=" font-weight: 600; font-family: system-ui;">{{ post.title }}</span>
+      </a>
+<br>
+<span style="font-weight: normal;font-family: system-ui;color: green;">By {{ site.name }}</span> - <amp-timeago style="width: 160px;height: 20px;margin-bottom: -5px;" width="160" height="20" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_xmlschema }}</amp-timeago>
+</li>
+{% endfor %}  
+            </div>
+       
+       
+       
+       
+       
+       
     <div class="botlist">
    {% include massrecent.html %}
 </div>
