@@ -5,7 +5,7 @@ date: 2021-08-29T06:11:07+00:00
 author: tentrockers
 layout: post
 guid: https://tentrockers.online/?p=69
-permalink: /?p=69
+postid: /?p=69
 cyberseo_rss_source:
   - 'https://dubhoodtamil.blogspot.com/feeds/posts/default?max-results=150&start-index=1'
 cyberseo_post_link:

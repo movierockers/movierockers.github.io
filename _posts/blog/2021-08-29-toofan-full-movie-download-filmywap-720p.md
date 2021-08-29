@@ -5,7 +5,7 @@ date: 2021-08-29T06:20:31+00:00
 author: tentrockers
 layout: post
 guid: https://tentrockers.online/?p=306
-permalink: /?p=306
+postid: /?p=306
 cyberseo_rss_source:
   - 'https://www.isaiminitamilrockers.live/feeds/posts/default?max-results=150&start-index=1'
 cyberseo_post_link:
