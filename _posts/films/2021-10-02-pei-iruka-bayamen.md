@@ -1,7 +1,7 @@
 ---
 date: 2021-10-02 08:58:54
 layout: film
-title: Pei Iruka Bayamen
+title: Pei Irukka Bayamen
 year: "2021"
 language: Tamil
 quality: HD
