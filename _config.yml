@@ -11,6 +11,7 @@ tag_page_dir: tag
 tag_page_data:
   sitemap: false
 highlighter: rouge
+ampdir: _amp
 twitter_username: twitter_username
 use_logo: false
 show_time_bar: false
