@@ -19,7 +19,6 @@ instagram_username: instagram_username
 show_modal_on_exit: false
 name: Moviesda
 permalink: /:title/
-permalink: /download/:title/
 paginate_path: /page/:num/
 sass:
   style: compressed
