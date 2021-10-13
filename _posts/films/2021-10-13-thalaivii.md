@@ -1,7 +1,7 @@
 ---
 date: 2021-10-13 19:23:28
 layout: film
-title: Thalaivii
+title: Thalaivii (Thalaivi)
 year: "2021"
 language: Tamil
 quality: DVD
