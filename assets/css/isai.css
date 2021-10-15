@@ -7,6 +7,7 @@ input,textarea,select{margin:1px;border:1px solid #ddd;max-width:80%;background:
 
 input[type='submit']{color : #6d6d6d;
 background-color : #fbfbfb;
+background-image : url(/img/main.gif);
 background-repeat : repeat-x;
 border : 1px solid #ededed;margin:1px;}
 input:hover, input:focus{  -moz-box-shadow: 0 0 10px #6699ff;
@@ -14,7 +15,7 @@ input:hover, input:focus{  -moz-box-shadow: 0 0 10px #6699ff;
 box-shadow: 0px 0px 10px #6699ff;}
 
 
-.line{background-color: #308bcf; color: #ffffff;  font-weight: bold; padding: 10px 10px 10px 10px; text-align: center; text-decoration: none; margin-bottom: 0px; font-size: small;}
+.line{background-color: #308bcf; color: #ffffff; background-image: url(/img/header.gif); font-weight: bold; padding: 10px 10px 10px 10px; text-align: center; text-decoration: none; margin-bottom: 0px; font-size: small;}
 
 
 .Adz {color: red; font-weight: bold; font-size: small; 
@@ -32,7 +33,7 @@ box-shadow: 0px 0px 10px #6699ff;}
 
 .Tag{padding: 3px; background-color: #eff3f6;}
 
-.form{margin: 1px; padding: 3px; border: 1px solid #ececec; }
+.form{margin: 1px; padding: 3px; background: url(/img/white.gif) repeat-x top; border: 1px solid #ececec; }
 
 .Adz a img{ height:auto; width:auto; max-width:99% }
 
@@ -55,7 +56,7 @@ border : 1px solid silver;
 }
 
 
-.isaiminida{margin: 1px; padding: 3px; border: 1px solid #ececec; }
+.isaiminida{margin: 1px; padding: 3px; background: url(/img/white.gif) repeat-x top; border: 1px solid #ececec; }
 
 
 .isaiminida a { color:  red;}
@@ -64,7 +65,7 @@ border : 1px solid silver;
 
 .bf { border-left: 4px solid #c3eff2; padding: 0 0 4px 6px; margin: 0 2px 0 4px; }
 
-.bottom { color: #d26c24; position: relative; z-index: 1; font-weight: bold; padding: 10px; border-bottom: 1px solid #ddd7c6; text-shadow: 0px 1px 0px #ffffff; box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4); -moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4); -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4); }
+.bottom { color: #d26c24; background: #ede9dd url(/img/title_back.gif) repeat-x; position: relative; z-index: 1; font-weight: bold; padding: 10px; border-bottom: 1px solid #ddd7c6; text-shadow: 0px 1px 0px #ffffff; box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4); -moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4); -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4); }
 
 
 .de { background-color: #f1f1f1; color: #444444; padding: 3px; font-size: 13px; font-family: arial,sans-serif; margin-top: 0px; margin-bottom: 0px; padding-left: 5px; padding-top: 5px; }
