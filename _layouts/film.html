@@ -48,19 +48,31 @@
 
 <tr><td><b>Movie</b></td><td><b>:</b></td><td>{{ page.title }} ({{ page.year }})</td></tr>
 
-<tr><td><b>Size</b></td><td><b>:</b></td><td>{{ page.size }}</td></tr>
 
 <tr><td><b>Quality</b></td><td><b>:</b></td><td>{{ page.quality }}</td></tr>
 
 <tr><td><b>Language</b></td><td><b>:</b></td><td>{{ page.language }}</td></tr>
 
 <tr><td><b>Rating</b></td><td><b>:</b></td><td>9.3/10</td></tr>
+	<tr><td><b>Size</b></td><td><b>:</b></td><td>{{ page.size }}</td></tr>
+
 
 <tr><td><b>Release Date</b></td><td><b>:</b></td><td><amp-timeago class="m1" width="160" height="20" datetime="{{ page.date | date_to_xmlschema }}"> {{ page.date | date_to_xmlschema }}</amp-timeago></td></tr>
 
 </table></div></div>
 
-<div class="line">{{ page.title }} (2014)</div><div class="f" title="{{ page.title }} (480x320)"> <img src="/img/dir.gif" alt="[+]" /> <a href="http://moviesdaweb.co/site_51166.xhtml">{{ page.title }} (480x320)</a></div><div class="f" title="{{ page.title }} (640x360)"> <img src="/img/dir.gif" alt="[+]" /> <a href="http://moviesdaweb.co/site_51169.xhtml">{{ page.title }} (640x360)</a></div><div class="Adz" align="center">
+<div class="line">{{ page.title }} (2014)</div>
+	
+	<div class="f" title="{{ page.title }} (480x320)">
+	<img src="https://i.ibb.co/3cxNqch/dir.png" alt="[+]" /> 
+	<a href="{{ page.video }}">{{ page.title }} (480x320)</a></div>
+	
+	<div class="f" title="{{ page.title }} (640x360)"> 
+		<img src="https://i.ibb.co/3cxNqch/dir.png" alt="[+]" /> 
+		<a href="{{ page.video }}">{{ page.title }} (640x360)</a></div>
+	
+	
+	<div class="Adz" align="center">
 </div><div class="aut">Page Tags :</div>
 
 <div class="Tag"><font color="green">
