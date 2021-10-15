@@ -14,15 +14,16 @@
 {% endif %}
 <meta name="language" content="en-us" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>{{ site.title }}</title>
-	<meta name="google-site-verification" content="_1sb8QEaKJ1wxEiHct-mxHYczAkQMOPadKLt8EWfHQY" />
+<title>Moviesda 2021 HD Movies Download, Moviesda Tamil Movies Download, Moviesda.Mobi 1080p HD Movies Download</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Download and Watch Latest Tamil Telugu Hindi Malayalam Movies" />
+<meta name="description" content="Moviesda 2021 HD Movies Download, Moviesda Tamil Movies Download, Moviesda Tamil 1080p HD Movies Download Moviesda.Mobi" />
+<meta name="keywords" content="Moviesda 2021 HD Movies Download, Moviesda Tamil Movies Download, Moviesda.Mobi 1080p HD Movies Download" />
+<meta name="classification" content="Moviesda 2021 HD Movies Download, Moviesda Tamil Movies Download, Moviesda.Mobi 1080p HD Movies Download" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="distribution" content="Global" />
 <meta name="rating" content="General" />
 <meta name="robots" content="index, follow" />
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-
 <style>
 body {padding: 0; margin:0 auto; max-width: 700px; font-family: Verdana; font-weight: normal; background: #f9f9f9; font-size: 13px;}
 a {text-decoration : none; color: #3b3b3b;}
@@ -65,36 +66,8 @@ border : 1px solid silver;
 .error { background: #fff8cc; border: 1px solid #ffe222; padding: 10px; font-weight: normal; color: red; }
 .isai { background-color: #f1f1f1; color: #444444; padding: 3px; font-size: 13px; font-family: arial,sans-serif; margin-top: 0px; margin-bottom: 0px; padding-left: 5px; padding-top: 5px; }
 </style>
-	<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ site.url }}"
-      },
-      "headline": "{{ site.title }}",
-      "image": "{{ site.title }}/favicon.ico",
-      "datePublished": "{{ site.time }}",
-      "dateModified": "{{ site.time }}",
-      "author": {
-        "@type": "Website",
-        "name": "{{ site.name }}",
-        "url": "{{ site.url }}"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "{{ site.name }}",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "{{ site.url }}/favicon.ico"
-        }
-      }
-    }
-    </script>
 </head>
 <body>
-
 <div class="line"><font size="4px">{{ site.name }}</font><br/><small>Name Of Quality</small></div>
 <div class="bottom" align="center">
 Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="red">Telegram Channel</font></a> & Get Updates and Movies! 
@@ -116,23 +89,21 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 {% for post in paginator.posts %}
 	<div style=" text-transform: capitalize;" class="f">
 	
-	<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "{{ post.title }}",
-    "description": "Read about or download file in the topic of {{ post.title }}.Eplore and learn more",
-    "publisher": {
-        "@type": "Website",
-        "name": "{{ site.name }}"
-    }}
-</script>
-	
-<b>{{ post.title }}</b> - <a href="{{ BASE_PATH }}{{ post.url }}"><span style="color: green;">Read More</span></a>
+<b>{{ post.title }}</b> - {{ post.category }} <a href="{{ BASE_PATH }}{{ post.url }}"><span style="color: green;">Read More</span></a>
 		</div>
 {% endfor %}  
 {% include pagination-home.html %}
-           </div>	
+           </div>
+	
+	<div class="line">Downloads</div>
+	{% for item in site.menu %}
+    {% if item.title and item.url %}
+	
+ <div class="f" title="{{ item.title }} movie download tamilrockers"> <img src="dir.gif" alt="{{ item.title }} movie download isaimini">
+<a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></div>
+    {% endif %}
+  {% endfor %}
+	
 	<div class="line">Downloads</div>
 	{% for item in site.menu2 %}
     {% if item.title and item.url %}
@@ -187,7 +158,7 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 	<div class="form"><b>Moviesda 2021 Movies Download Moviesda Tamil 2021 Movies Download Moviesda.net 2021 Mobile Movies Download Moviesda 2021 HD Movies Download Moviesda 2021 Download MyMoviesda.Com Tamil Moviesda New 720p HD 5.1 Movies Download Tamil 2021 Movies Moviesda Download MyMoviesda Home Page Tamil 2021 Mobile Movies Download</b></div>
 </div>
 </div>
-<div class="line"> © {{ site.name }}<br/>All Right Reserved</div>
+<div class="line"> © Moviesda<br/>All Right Reserved</div>
 	
 	
 
