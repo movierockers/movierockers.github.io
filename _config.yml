@@ -103,6 +103,8 @@ two_columns_layout: true
 menu:
   - title: Tamil Movies 2021
     url: /category/tamil-movies-2021
+  - title: Tamil Movies 2020
+    url: /category/tamil-movies-2020
   - title: Tamil Movies 2019
     url: /category/tamil-movies-2019
   - url: /category/tamil-2018-movies
