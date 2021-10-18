@@ -113,42 +113,7 @@ Follow our <a href="https://telegram.im/@isaiminidownload?lang=en"><font color="
 <a href="{{ item.url }}">{{ item.title }}</a></div>
     {% endif %}
   {% endfor %}
-		<div class="line">Movies by Actors</div>
-	<div style=" overflow-y: scroll; height: 200px; " itemscope itemtype="https://schema.org/SiteNavigationElement">
-{% for item in site.actor %}
-		<div class="f" title="{{ item.title }} movies download tamilrockers"> <img src="dir.gif" alt="{{ item.title }} Movies Download">
-<a href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }} Movies</a></div>
-	{% endfor %}  
-    </div>
-	<div class="line">Movies by Genre</div>
-	<div itemscope itemtype="https://schema.org/SiteNavigationElement">
-{% for item in site.genre %}
-		<div class="f" title="{{ item.title }} movies download tamilrockers"> <img src="dir.gif" alt="{{ item.title }} Movies Download">
-<a href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }} Movies</a></div>
-	{% endfor %}  
-    </div>
-	<div class="line">Movies by Directors</div>
-	<div itemscope itemtype="https://schema.org/SiteNavigationElement">
-{% for item in site.director %}
-		<div class="f" title="{{ item.title }} movies download tamilrockers"> <img src="dir.gif" alt="{{ item.title }} Movies Download">
-<a href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }} Movies</a></div>
-	{% endfor %}  
-    </div>
-	<div class="line">Movies by Quality</div>
-	<div itemscope itemtype="https://schema.org/SiteNavigationElement">
-{% for item in site.quality %}
-		<div class="f" title="{{ item.title }} movies download tamilrockers"> <img src="dir.gif" alt="{{ item.title }} Movies Download">
-<a href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }} Movies</a></div>
-	{% endfor %}  
-    </div>
 	
-	<div class="line">Movies by Language</div>
-	<div itemscope itemtype="https://schema.org/SiteNavigationElement">
-{% for item in site.language %}
-		<div class="f" title="{{ item.title }} movies download tamilrockers"> <img src="dir.gif" alt="{{ item.title }} Movies Download">
-<a href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }} Movies</a></div>
-	{% endfor %}  
-    </div>
 	
 
 
