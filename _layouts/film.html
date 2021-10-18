@@ -145,7 +145,12 @@
 <a href="/contact.xhtml">Contact Us</a>
 |
  <a href="/dmca.xhtml">DMCA</a></div>
-
+<span>[
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+  {% endfor %}
+]</span>
 <div class="line"> © Moviesda.Net<br/>All Right
 Reserved</div>
 <script type="application/ld+json">{
