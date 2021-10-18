@@ -6,6 +6,7 @@ plugins:
   - jekyll-paginate-content
   - jekyll/tagging
   - amp-jekyll
+  - jekyll-seo-tag
 tag_page_layout: tag_page
 tag_page_dir: tag
 tag_page_data:
