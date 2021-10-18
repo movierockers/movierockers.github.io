@@ -409,7 +409,6 @@ collections:
   - label: "Movies"
     name: "fims"
     folder: "_posts/films"
-    folder: "_movierockers"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "{{title}}"
@@ -435,14 +434,6 @@ collections:
         name: "quality"
         widget: "string"
       - label: "Category"
-        name: "actor"
-        widget: "relation"
-        collection: "actor"
-        searchFields: ["title"]
-        valueField: "slug"
-        displayFields: ["title"]
-        required: false
-      - label: "Category"
         name: "category"
         widget: "relation"
         collection: "categories"
@@ -460,32 +451,6 @@ collections:
       - label: "Poster Url"
         name: "poster"
         widget: "string"
-        required: false
-      - label: "Description"
-        name: "description"
-        hint: "This will be used across the pages and for search engines."
-        widget: "string"
-        required: false
-      - label: "Tags"
-        name: "tags"
-        hint: "Separate with commas. These will also be used as keywords for search engines."
-        widget: "list"
-        required: false
-      - label: "Author"
-        name: "author"
-        widget: "relation"
-        collection: "authors"
-        displayFields: [display_name]
-        searchFields: [display_name]
-        valueField: "name"
-        required: false
-      - label: "Paginate"
-        name: "paginate"
-        widget: "boolean"
-        default: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
         required: false
   - label: "Pages"
     name: "pages"
