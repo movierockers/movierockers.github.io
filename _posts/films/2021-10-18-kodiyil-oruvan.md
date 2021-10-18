@@ -3,7 +3,7 @@ date: 2021-10-18 22:36:13
 layout: film
 title: Kodiyil Oruvan
 year: "2021"
-language: Tamil-
+language: Tamil
 quality: HD
 category: Tamil Movies 2021
 size: 605.54MB
