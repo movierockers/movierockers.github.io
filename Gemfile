@@ -8,4 +8,5 @@ gem "jekyll-paginate"
 gem "jekyll-paginate-content"
 gem 'jekyll-seo-tag'
 gem "json"
+gem "amp-jekyll"
 gem 'jekyll-manager', group: :jekyll_plugins
