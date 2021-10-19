@@ -3,8 +3,6 @@ layout: null
 ---
 User-agent: *
 Allow: /
-Disallow: /author/
-Allow: /category/
 
 Sitemap: {{site.url}}/sitemap.xml
 Sitemap: {{site.url}}/sitemap/actor.xml
