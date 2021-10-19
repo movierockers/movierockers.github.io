@@ -13,6 +13,15 @@ layout: null
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.posts limit:30 %}
       <item>
+        <title>{{ page.title | xml_escape }}</title>
+        <description>{{ page.title | xml_escape | strip_html | truncatewords:100 }}</description>
+        <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
+        <link>{{ page.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ page.url | prepend: site.baseurl | prepend: site.url }}</guid>
+      </item>
+    {% endfor %}
+    {% for post in site.posts limit:30 %}
+      <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape | strip_html | truncatewords:100 }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
