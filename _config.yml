@@ -23,7 +23,7 @@ paginate_path: /page/:num/
 sass:
   style: compressed
 markdown: kramdown
-url:  https://moviesda.isaiminiweb.online
+url:  https://new.hotstar.news/
 facebook_username: facebook_username
 sent_message_url: /contact/message-sent/
 paginate_content:
@@ -98,7 +98,7 @@ exclude:
 show_get_theme_btn: false
 show_hero: true
 email: youremail@test.com
-baseurl: ""
+baseurl: "/moviesdas"
 two_columns_layout: true
 menu:
   - title: Tamil Movies 2021
