@@ -4,7 +4,6 @@ medium_username: medium_username
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
-  - jekyll/tagging
   - amp-jekyll
   - jekyll-seo-tag
 tag_page_layout: tag_page
