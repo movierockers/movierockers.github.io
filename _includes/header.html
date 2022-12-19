@@ -1,27 +1,27 @@
-<header class="bar-header">
-    <a id="menu" role="button">
-        <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
-    </a>
-    <h1 class="logo">
-        <a href="{{ site.baseurl }}/">
-            {% if site.use_logo %}
-                {% include logo.html %}
-            {% else %}
-                {{ site.name }} <span class="version">{{ site.version }}</span>
-            {% endif %}
+<div class="header">
+    <div class="box">
+      <a href="/" title="TamilPaatu" style=" padding: 25px 10px 10px 4.5em; margin-bottom: 20px; vertical-align: middle; display: inline-block; font-size: 18px; color: white; ">{{site.title}}</a>
+      <form method="get" action="/search">
+        <input type="text" placeholder="Search..." name="keyword" value="">
+        <button class="icon"><i class="search-svg"></i></button>
+      </form>
+      <nav class="site-nav">
+        <a href="#" style="display:none" class="menu-icon">
+          <svg viewBox="0 0 18 15">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+            <path d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+            <path d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+          </svg>
         </a>
-    </h1>
-    <a id="search" class="dosearch" role="button">
-        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
-    </a>
-    {% if site.show_get_theme_btn %}
-        <a href="https://github.com/thiagorossener/jekflix-template" class="get-theme" role="button">
-            Get this theme!
-        </a>
-    {% endif %}
-</header>
-
-<div id="mask" class="overlay"></div>
-
-{% include menu.html %}
-{% include search.html %}
+        <div class="trigger">
+          <a class="page-link anim slink" href="/search" rel="bookmark" style="display:none">Search</a>
+          <a class="page-link anim" href="/browse-by-year/2023.html" rel="bookmark">Latest Movies</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <p class="cen mhigh mb-1">
+    {% for item in site.language reversed %}
+    <a href="{{ item.url }}">{{ item.title }}</a> | 
+    {% endfor %}
+  </p>

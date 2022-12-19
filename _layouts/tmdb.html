@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+   </head>
+   <body>
+{% include header.html %}
+
+<div class="box cen">
+    <section class="bots ib post ctr wrapper cen">
+      
+        <div class="page-content left">
+          <div class="pad10">
+         <div class="headercode"></div>
+         <article>
+         <div class="moviebox"></div>
+
+
+         <h4 class="wtitle cen">Cast</h4>
+       
+            <ul id="cast" itemscope="" itemtype="https://schema.org/SiteNavigationElement" style=" ">
+         </ul>
+         
+       <h4 class="bold uline">Incoming Search Terms:</h4>
+       <div class="keys"></div>
+
+        </article>
+        </div>
+    </div>
+</section>
+{% include sidebar.html %}
+</div>
+<script src="movie.js"></script>
+{% include footer.html %}

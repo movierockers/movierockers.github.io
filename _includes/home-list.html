@@ -1,0 +1,33 @@
+<div class="box cen">
+    <section class="bots ib">
+    <!-- post list -->
+<div class="botlist">
+
+<h2 class="left pad10">Latest Tamil Movies</h2>
+{%- assign samples = site.posts | where: 'language', 'Tamil' -%}
+{% for post in samples limit:6 %}
+{% include item.html %}
+{% endfor %}
+
+
+<h2 class="left pad10">Tamil Dubbed Movies</h2>
+{%- assign samples = site.posts | where: 'language', 'Tamil Dubbed' -%}
+{% for post in samples limit:6 %}
+{% include item.html %}
+{% endfor %}
+
+
+
+
+
+
+
+
+
+</div>
+</section>
+{% include sidebar.html %}
+
+
+</div>
+

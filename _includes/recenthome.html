@@ -1,0 +1,63 @@
+<div class="box cen">
+    <section class="bots ib">
+    <!-- post list -->
+
+
+    <div class="botlist">
+
+
+      
+
+      <h2 class="left pad10">Recent Updates</h2>
+
+      {% assign paginator.posts = site.posts %}
+      {% for post in paginator.posts %}
+      {% include item.html %}
+      {% endfor %}
+<!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span class="page prev">&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="page active">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a class="page" href="/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span class="page next">Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+
+      <h2 class="left pad10">latest 2022 Updates</h2>
+      {%- assign samples = site.posts | where: 'year', '2022' -%}
+      {% for post in samples limit:6 %}
+      {% include item.html %}
+      {% endfor %}
+      
+
+    </div>
+
+
+    
+    
+    
+    </section>
+    {% include sidebar.html %}
+    
+    
+    </div>
+
+    

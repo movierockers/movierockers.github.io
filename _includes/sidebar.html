@@ -1,0 +1,49 @@
+<section class="sbar ib cen">
+    <div id="sidebar" class="cen">
+    <section class="wid ctr">
+      <h4 class="wtitle cen">Follow us</h4>
+      <div class="social-icons cen">
+        <div class="s-icon telegram">
+          <a href="https://t.me/moviesdavin" target="_blank" rel="nofollow">
+          <svg xmlns="http://www.w3.org/2000/svg" height="75" width="75" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#37aee2"></rect><path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144"></path><path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34"></path><path fill="#f6fbfe" d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  <section class="wid ctr left">
+    <h4 class="wtitle cen">Recent Updates</h4>
+    <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+        
+        
+        
+        
+{% for post in site.posts limit:10 %}  
+  <li itemprop="name"><a itemprop="url" href="{{ post.url }}">{{ post.title }} ({{ post.year }})</a></li>  
+{% endfor %}  
+        
+        
+        
+        
+        
+    </ul>
+  </section>
+        <section class="wid ctr left">
+    <h4 class="wtitle cen">Movies By Year</h4>
+          <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+
+{% assign sorted = site.year | sort: 'date' | reverse %}
+{% for item in sorted limit:10 %}
+      <li itemprop="name"><a itemprop="url" href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %} 
+</ul>
+         </section>
+    
+         <section class="wid ctr left">
+          <h4 class="wtitle cen">Popular Movies</h4>
+          <ul id="recentmdb" itemscope="" itemtype="https://schema.org/SiteNavigationElement">  
+          </ul>
+        </section>
+  
+</div>
+
+  </section>

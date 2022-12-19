@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} Full Movie Download {{ page.title }} HD Movie Download Moviesda</title>
+    <meta name="description" content="{{ page.title }} {{ page.year }}  Movie Download {{ page.title }} {{ page.year }}  Moviesda Download {{ page.title }} {{ page.year }}  {{ page.language }} Movie Download isaimini" />
+    <meta name="keywords" content="{{ page.title }} {{ page.year }}  movie download {{ page.title }} {{ page.year }}  moviesda download {{ page.title }} {{ page.year }}  {{ page.language }} movie download isaimini" />
+    <meta property="og:title" content="{{ page.title }} Movie Download - {{ site.title }}" />
+    <meta property="og:description" content="{{ page.title }} Full Movie Download , {{ page.title }} Tamil HD Movie Download TamilRockers, {{ page.title }} Watch Online TamilRockers, {{ page.title }} Movie Download TamilRockers">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
+    <meta property="og:image" content="{{site.url}}{{ page.poster }}" />
+    <meta property="video:director" content="{{ page.director }}">
+    <meta property="video:release_date" content="{{ page.date }}">{% for item in page.dlink limit:1 %}{% if item.url %}
+    <meta property="og:video" content="{{ item.url }}">
+    <meta property="og:video:secure_url" content="{{ item.url }}">
+    <meta property="og:video:type" content="video/mp4">{% endif %}{% endfor %}{% if page.genre.size > 0 %}{% for genre in page.genre %}
+    <meta property="video:tag" content="{{ genre }}">{%- unless forloop.last -%}{%- endunless -%}{% endfor %}{% endif %}
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en_US" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+    <meta name="Rating" content="General">
+    <meta name="audience" content="all">
+    <meta name="theme-color" content="#0085ef">
+    <meta name="msapplication-TileColor" content="#0085ef">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta itemprop="isFamilyFriendly" content="true">
+    <meta itemprop="copyrightYear" content="{{ 'now' | date: "%Y" }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+</head>
+    <body itemscope itemtype="https://schema.org/Movie">
+        
+    <meta itemprop="dateCreated" content="{{ page.date }}">
+        
+    

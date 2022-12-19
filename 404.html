@@ -1,6 +1,21 @@
 ---
-layout: 404
-title: 404
-description: The page you are looking for couldn't be found.
-permalink: /404.html
+layout: home
 ---
+<div class="header">
+    <h4 class="cen" style="display: block; font-size: 3.5em">404</h4>
+    </div><div class="box cen">
+
+        <section class="wid ctr left">
+            <h4 class="wtitle cen">Recent Updates</h4>
+            <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+                
+                
+                
+                
+        {% for post in site.posts%}  
+          <li itemprop="name"><a itemprop="url" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} ({{ post.year }})</a></li>  
+        {% endfor %}  
+
+            </ul>
+          </section></div>
+{% include footer.html %}

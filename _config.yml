@@ -1,136 +1,94 @@
-google_analytics: UA-XXXXXXXX-X
-show_modal_on_finish_post: false
-medium_username: medium_username
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+timezone: Asia/Kolkata
+title: Moviesda
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Moviesda Tamil Movies Download Moviesda 2023 Movies Download
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://moviesda.hair" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+theme: minima
+
+# Filtering Content
+future: true
 plugins:
   - jekyll-paginate
-  - jekyll-paginate-content
-  - amp-jekyll
+  - jekyll-timeago
+  - jekyll-sitemap
   - jekyll-seo-tag
-tag_page_layout: tag_page
-tag_page_dir: tag
-tag_page_data:
-  sitemap: false
-highlighter: rouge
-ampdir: _amp
-twitter_username: twitter_username
-use_logo: false
-show_time_bar: false
-instagram_username: instagram_username
-show_modal_on_exit: false
-name: Moviesda
-permalink: /:title/
-paginate_path: /page/:num/
-sass:
-  style: compressed
-markdown: kramdown
-url:  https://new.hotstar.news/
-facebook_username: facebook_username
-sent_message_url: /contact/message-sent/
-paginate_content:
-  enabled: true
-  debug: false
-  collections:
-    - posts
-    - category
-    - actor
-    - director
-    - language
-    - genre
-    - quality
-    - year
-  auto: false
-  separator: --page-break--
-  permalink: /:num/
-  seo_canonical: true
-  properties:
-    part:
-      is_generated: true
-    last:
-      is_generated: true
-    single:
-      is_generated: true
-categories_folder: category
-actors_folder: actor
-github_username: github_username
-disqus_username: disqus_username
+  - jekyll-last-modified-at
+
+paginate: 12
+paginate_path: /latest-updates/:num/
+
 collections:
-  authors:
-    output: true
-  articles:
-    output: true
-  actor:
-    output: true
-  director:
+  year:
     output: true
   language:
     output: true
-  quality:
-    output: true
-  genre:
-    output: true
-  year:
-    output: true
-paginate: 10
-linkedin_username: linkedin_username
-version: live
-title: Moviesda 2021 Movies Download, Moviesda 2021 HD Movies Download
-language: en
-description: Watch and Download Tamil, Telugu, Hindi, Malayalam, Kannada,
-  English, Movies and Web series Isaimini 2021
-tags:
-  - tamil
-  - hindi
-  - telugu
-  - malayalam
-  - kannada
-  - webseries
-  - english
-exclude:
-  - package.json
-  - package-lock.json
-  - src
-  - node_modules
-  - initpost.sh
-  - Gemfile
-  - Gemfile.lock
-  - gulpfile.js
-  - README.md
-show_get_theme_btn: false
-show_hero: true
-email: youremail@test.com
-baseurl: "/moviesdas"
-two_columns_layout: true
-menu:
-  - title: Tamil Movies 2021
-    url: /category/tamil-movies-2021
-  - title: Tamil Movies 2020
-    url: /category/tamil-movies-2020
-  - title: Tamil Movies 2019
-    url: /category/tamil-movies-2019
-  - url: /category/tamil-2018-movies
-    title: Tamil Movies 2018
-  - title: Tamil Movies 2017
-    url: /category/tamil-2017-movies
-  - url: /category/tamil-2016-movies
-    title: Tamil Movies 2016
-  - title: Tamil Movies 2015
-    url: /category/tamil-2015-movies
-  - title: Tamil Movies 2012
-    url: /category/tamil-2014-movies
-  - title: Tamil Movies 2013
-    url: /category/tamil-2013-movies 
-  - title: Tamil Movies 2012
-    url: /category/tamil-2012-movies
-menu2:
-  - title: TamilRockers Movies
-    url: https://ijayasurya.github.io/tamilrockers.html
-  - title:  Moviesda HD Movies
-    url: https://ijayasurya.github.io/moviesda-downloads.html
-  - title:  Isaimini 2020 Movies
-    url: https://ijayasurya.github.io/isaimini-2020-movies.html
-  - title:  TamilGun Movies Download
-    url: https://ijayasurya.github.io/tamilgun-hd-movies.html
-  - title:  TamilRockers 2020 Movies 
-    url: https://ijayasurya.github.io/tamilrockers-2020-movies.html
-  - title:  IsaiDub Dubbed Movies
-    url: https://ijayasurya.github.io/isaidub-download.html
+    
+defaults:
+  - scope:
+      path: ''          # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: movie
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /:title
+  - scope:
+      path: ''          # An empty string here means all files in the project
+      type: year
+    values:
+      layout: year
+      permalink: /browse-by-year/:title.html
+  - scope:
+      path: ''          # An empty string here means all files in the project
+      type: language
+    values:
+      layout: language
+      permalink: /browse-by-language/:title.html
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

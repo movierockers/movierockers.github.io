@@ -1,200 +1,280 @@
-<html>
-<head>
+{% include movie-head.html %}
+{% include header.html %}
+<div class="box cen">
+    <section class="bots ib post ctr wrapper cen">
+      
+      <div class="page-content left">
+        <div class="pad10">
+    <header>
+        <p class="normal">{{ page.title }} {{ page.year }} HD Full Movie Download {{ page.title }} ({{ page.year }}) HD Download isaimini Moviesda.Net</p>
+      <h1>{{ page.title }} {{ page.language }} Movie HD download Movierulz</h1>
+  <h2 class="normal">Download {{ page.title }} ({{ page.year }}) {{ page.language }} Movie HD Moviesda</h2>
+    </header>
+    <article class="post-content">
+      
+      {% if page.poster %}
+      <div id="movie-image">
+        <figure>
+          <picture>
+        <img itemprop="image" alt="{{ page.title }} movie poster" style=" height: auto !important; " title="{{ page.title }} Movie Poster" src="{{ page.poster }}" loading="lazy">
+      
+          </picture>
+        </figure>
+      </div>
+      {% else %}
+       <div id="movie-image">
+        <figure>
+          <picture>
+        <img itemprop="image" alt="{{ page.title }} movie poster" style=" height: auto !important; " title="{{ page.title }} Movie Poster" src="{{ page.poster }}" loading="lazy">
+      
+          </picture>
+        </figure>
+      </div>
+      {% endif %}
+      <fieldset id="movie-handle">
+        <legend class="bluer cen">Movie Information</legend>
+        <b>Movie Name:</b> <span itemprop="name">{{ page.title }}</span><br>
+        <b>Year:</b> <a href='{{ site.url }}/browse-by-year/{{ page.year | slugify | append: ".html" }}'>{{ page.year }}</a><br>
+        <b>Genre:</b> 
+        
+        {% if page.genre.size > 0 %}
+        {% for genre in page.genre %}
 
-  {% assign title = '' %}
-    {% if page.layout == 'author' %}
-        {% assign title = page.display_name %}
-    {% elsif page.title %}
-        {% assign title = page.title | append: " | " | append: site.name %}
-    {% else %}
-        {% assign title = site.title %}
-    {% endif %}
 
-    {% assign image = '' %}
-    {% if page.image %}
-        {% assign image = page.image %}
-    {% else %}
-        {% assign image = "{{ page.poster }}" %}
-    {% endif %}
+        
 
-    {% assign description = '' %}
-    {% if page.description %}
-        {% assign description = page.description | strip_html | strip_newlines | truncate: 160 %}
-    {% else %}
-        {% assign description = site.description %}
-    {% endif %}
 
-    {% assign url = '' %}
-    {% if paginator.page_trail %}
-        {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
-    {% else %}
-        {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
-    {% endif %}
-	<meta http-equiv="refresh" content="10;URL=//luvaihoo.com/afu.php?zoneid=3785595">
+        <span itemprop="genre">{{ genre }}</span>
+        
+        {%- unless forloop.last -%}, {%- endunless -%}
+        {% endfor %}
+        {% endif %}
+        <br>
 
-  
-<meta name="language" content="en-us" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>{{ page.title }}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="{{ page.title }} movie Download tamilrockers hd {{ page.title }} HD Movie Download {{ page.title }} Movie HD Download {{ page.title }} 400 mb link Download Moviesda.in {{ page.title }} Full Movie 1080p HD & 720 HD TamilRockers TamilGun Download Full HD Movie isaimini Download {{ page.title }} Mp4 HD Movie Download {{ page.title }} Movies Collection isaidub Full Movie Download {{ page.title }} Movies Collection Full Movie Download {{ page.title }} Movies Collection Movie Moviesda Download isaimini" />
 
-  
-    <!-- Social: Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ title }}">
-    <meta name="twitter:description" content="{{ description }}">
-    <meta property="twitter:image:src" content="{{ page.poster }}{{ page.image }}">
-    {% if site.twitter_username %}
-        <meta name="twitter:site" content="@{{ site.twitter_username }}">
-    {% endif %}
+{% if page.cast %}
 
-    <!-- Social: Facebook / Open Graph -->
-    <meta property="og:url" content="{{ url }}">
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:image" content="{{ page.poster }}{{ page.image }}">
-    <meta property="og:description" content="{{ description }}">
-    <meta property="og:site_name" content="{{ site.title }}">
+        <b>Cast:</b>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+        {% if page.cast.size > 0 %}
+        {% for cast in page.cast %}
+
+        <span itemprop="actor">{{ cast }}</span>
+        
+        {%- unless forloop.last -%}, {%- endunless -%}
+        {% endfor %}
+        {% endif %}
+
+        <br>
+        {% endif %}
+
+
+
+        {% if page.director %}
+
+        <b>Director:</b>
+
+        {% if page.director.size > 0 %}
+        {% for director in page.director %}
+
     
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/icons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+        <span itemprop="director">{{ director }}</span>
 
-    <!-- Windows 8 Tile Icons -->
-    <meta name="application-name" content="{{ site.name }}">
-    <meta name="msapplication-TileColor" content="#141414">
-    <meta name="msapplication-square70x70logo" content="smalltile.png" />
-    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
-    <meta name="msapplication-wide310x150logo" content="widetile.png" />
-    <meta name="msapplication-square310x310logo" content="largetile.png" />
+        {%- unless forloop.last -%}, {%- endunless -%}
+        {% endfor %}
+        {% endif %}
+
+        <br>
+        {% endif %}
     
-    <!-- Android Lolipop Theme Color -->
-    <meta name="theme-color" content="#141414">
-    <link rel="canonical" href="{{ url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="stylesheet" href="{{ '/assets/css/isai.css' | prepend: site.baseurl }}">
-  </head>
-<body>
-  <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3744336,document.body||document.documentElement)</script>
-<div class="line">
-        <font size="4px">{{ site.name }}</font><br/><small>Name Of Quality</small></div> 
-  {% include sbox.html %}
-  <div class="Adz" align="center">
-  <!-- Bulletprofit - Ad Display Code -->
-<!-- Bulletprofit - Ad Display Code -->
+        <b>Language:</b> <span itemprop="inLanguage"><a href='{{ site.url }}/browse-by-language/{{ page.language | append: ".html" }}'>{{ page.language }}</a></span><br>
+
+        <b>Updated:</b> {{ page.date  | timeago }}
+      </fieldset>
+       <div class="ziparea normal">
+  
+            <span class="bold uline">Download {{ page.title }} movie download HD {{page.language}}rockers</span><br>
+            {% if page.dlink %}
+            <table id="tlist" class="firstleft">
+      <tbody content="1">
+        
+          <tr>
+          
+
+              <th id="track">Title</th> 
+              {% for item in page.dlink limit:1 %}
+              {% if item.torrent %}
+              <th id="play">Torrents</th>
+              {% endif %}
+              {% endfor %}
+                 {% for item in page.dlink limit:1 %}
+              {% if item.url %}
+              <th id="play">Download</th>
+              {% endif %}
+              {% endfor %}
+          </tr>
+          {% for item in page.dlink %}
+         <tr>
+              <td><span><h2 class="nostyle"><span><link href="{{item.url}}"> <a href="{{item.url}}" title="Download {{page.title}} movie HD">
+                {% if item.title %}
+                {{item.title}}
+                {% else %}
+                {{page.title}} 
+                {% endif %}
+              
+              
+              </a> </span></h2>
+                  <br><b>Language: </b>
+                  <span>
+                    {% if item.language.size > 0 %}
+                    {% for language in item.language %}
+                    {{language}}
+                    {%- unless forloop.last -%}, {%- endunless -%}
+                    {% endfor %}
+                    {% endif %}
+                  </span>
+                  <br>
+                  <b>Quality: </b>
+                  <span>{{item.quality}}</span><br>
+                  <b>Size: </b><span>{{item.size}}</span> 
+                </span>
+              </td>
+              {% if item.torrent %}
+              <td><a href="{{item.torrent}}">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 19.264 19.264" style="&#10;    width: 30px;&#10;    height: 30px;&#10;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path style="fill: #007c05;" d="M19.264,9.638c0-5.319-4.313-9.631-9.632-9.631C4.312,0.007,0,4.32,0,9.638    c0,4.1,2.567,7.593,6.177,8.982l-1.818-8.45L3.845,7.782l-0.91-4.224L6.46,2.799l1.303,6.059c0.352,1.636,1.094,2.514,2.316,2.25    c0.967-0.208,1.377-0.995,1.487-1.597c0.049-0.228,0.013-0.51-0.047-0.786L10.076,2.02L13.6,1.263l1.646,7.651    c0.662,3.077,2.454,3.548,2.454,3.548s-2.419,0.521-3.433,0.738c-1.012,0.219-1.694-1.591-1.694-1.591l-0.07,0.015    c-0.288,0.785-0.613,2.06-3.127,2.602c-0.184,0.039-0.364,0.064-0.542,0.083l1.064,4.948    C15.092,19.116,19.264,14.867,19.264,9.638z"/>
+                    </g>
+                  </g>
+                  </svg></a>
+              </td> 
+              {% else %}
+            <td>  </td> 
+              {% endif %}
+              
+           <td>
+            {% if item.url %}
+            <a class="dlink anim" href="{{item.url}}" rel="nofollow" title="Download {{page.title}} movie {{item.quality}}">Download</a>
+            {% endif %}
+            {% if item.watch %}
+            <span itemprop="potentialAction" itemscope itemtype="https://schema.org/WatchAction">
+               <a itemprop="target" class="dlink anim" href="{{item.watch}}" rel="nofollow" title="Watch {{page.title}} movie {{item.quality}}">Watch</a> </span>
+               {% else %}
+               {% endif %}
+              </td>
+              
+          </tr>     
+               
+                </tr>
+                {% endfor %}
+      </tbody>
+  </table>
+
+
+
+
+
+  {% endif %}
+
+
+  {% if page.video %}
+  <table id="tlist" class="firstleft">
+    <tbody content="1">
+        <tr>
+            <th id="track">Title</th>
+            <th id="play">Download</th>
+        </tr>
+          
+       <tr>
+            <td><span><h2 class="nostyle"><span><link href="{{item.url}}"> <a href="{{item.url}}" title="Download {{page.title}} movie HD">{{page.title}}</a> </span></h2>
+                <br><b>Quality: </b><span>{{page.quality}}</span><br><b>Size: </b><span>{{page.size}}</span> </span>
+            </td>
+         <td>
+             <a class="dlink anim" href="https://filespedia.github.io/download.html?url={{page.video}}" rel="nofollow" title="Download {{page.title}} movie HD">Download</a>
+            </td>
+            
+        </tr>     
+             
+              </tr>
+    </tbody>
+</table>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <div class="cen">
+            <script type="text/javascript">(function() {var script=document.createElement("script");script.type="text/javascript";script.async =true;script.src="//telegram.im/widget-button/index.php?id=@moviesdavin";document.getElementsByTagName("head")[0].appendChild(script);})();</script>
+            <a href="https://telegram.im/@moviesdavin" target="_blank" class="cen telegramim_button telegramim_shadow telegramim_pulse" style="display: inline-block;font-size:14px;width:25%;background:#27A5E7;box-shadow:1px 1px 5px #27A5E7;color:#FFFFFF;border-radius:0px;" title=""><i></i> Follow</a>
+              
+            
+          </div>
+        
+  
+        <h4 class="bold uline">Incoming Search Terms:</h4>
+  <ul>
+        <li>{{ page.title }} Movie Download isaimini</li>
+        <li>{{ page.title }} Movie Download {{page.language}}rockers</li>
+         <li>{{ page.title }} Movie Download {{page.language}}gun</li>
+         <li>{{ page.title }} Movie Download {{page.language}}mv</li>
+         <li>{{ page.title }} Movie Download isaiminiweb</li>
+         <li>{{ page.title }} Movie Download isaiminida</li>
+         <li>{{ page.title }} Movie Download isaiminipa</li>
+         <li>{{ page.title }} Movie Download {{page.language}}dbox</li>
+         <li>{{ page.title }} Movie Download moviesdaweb</li>
+         <li>{{ page.title }} Movie Download moviesda</li>
+         <li>{{ page.title }} Movie Download marina rockers</li>
+         <li>{{ page.title }} Movie Download sri rockers</li>
+         <li>{{ page.title }} Movie Download kuttymovies</li>
+         <li>{{ page.title }} Movie Download cool{{page.language}}</li>
+         <li>{{ page.title }} Movie Download Youtube</li>
+         <li>{{ page.title }} Movie Download Disney+ Hotstar</li>
+         <li>{{ page.title }} Movie Download Netflix</li>
+         <li>{{ page.title }} Movie Download Amazon Prime Video</li>
+         <li>{{ page.title }} Movie Download ZEE5</li>
+         <li>{{ page.title }} Movie Download ALT Balaji</li>
+         <li>{{ page.title }} Movie Download MX Player</li>
+         <li>{{ page.title }} Movie Download Hungama</li>
+         <li>{{ page.title }} Movie Download BIGFlix</li>
+         <li>{{ page.title }} Movie Download TnMoviez</li>
+         <li>{{ page.title }} Movie Download isaidub</li>
+         <li>{{ page.title }} Movie Download oru{{page.language}}</li>
+         <li>{{ page.title }} Movie Download in {{page.language}}</li>
+         <li>{{ page.title }} Movie Download in Hindi</li>
+         <li>{{ page.title }} Movie Download in Telugu</li>
+         <li>{{ page.title }} Movie Download in Malayalam</li>
+         <li>{{ page.title }} Movie Download in Kannada</li>
+         <li>{{ page.title }} Movie Download in English</li>
+         <li>{{ page.title }} Movie Download telegram</li>
+         <li>{{ page.title }} Movie Download telegram link</li>
+         <li>{{ page.title }} Movie Download isaiminimob</li>
+         <li>{{ page.title }} Movie Download {{page.language}}blasters</li>
+         <li>{{ page.title }} Movie Download {{page.language}}play</li>
+         <li>{{ page.title }} Movie Download jiorockers</li>
+         <li>{{ page.title }} Movie Download movierulz</li>
+         <li>{{ page.title }} Movie Download kotha movies</li>
+        </ul>
+        
+        <p>{{ page.title }} ({{ page.year }}) Movies Download, TamilRockers {{ page.title }} ({{ page.year }}) {{ page.quality }} Full Movies Download, MobileRockers {{ page.title }} ({{ page.year }}) Mobile Movies Download, TamilRockers {{ page.title }} ({{ page.year }}) Download, {{ page.title }} ({{ page.year }}) Movies Download, TamilRockers {{ page.title }} ({{ page.year }}) {{ page.quality }} Full Movies Download, MobileRockers {{ page.title }} ({{ page.year }}) Mobile Movies Download, TamilRockers {{ page.title }} ({{ page.year }}) Download</p>
+  
+  <p>{{ page.title }} Full Movie Download {{ page.title }} HD Movie Download {{ page.title }} Movie HD Download {{ page.title }} Tamil Full Movie Free Download Moviesda.in {{ page.title }} Full Movie 1080p HD & 720 HD TamilRockers TamilGun Download {{ page.title }} Full HD Movie isaimini Download {{ page.title }} Mp4 HD Movie Download</p>
+  
+  <p>{{ page.title }} (Original) Full Movie Download {{ page.title }} (Original) {{ page.language }} Full Movie Download {{ page.title }} (Original) Movie Moviesda Download isaimini </p>
+        
+    </article>
   </div>
-   <div class="line">Movie Information</div>
-
-  <div class="isai" align="left">
-    <div class="pr">
-    <img style="margin-left: 7px;" typeof="foaf:Image" src="{{ page.poster }}{{ page.image }}" width="30%" height="auto" alt="{{ page.seotitle }}" title="{{ page.seotitle }}" class="tbl"/>
-
-     <table cellspacing="5">
-
-<tbody><tr><td><b>Name</b></td><td><b>:</b></td><td>{{ page.seotitle }}</td></tr>
-
-<tr><td><b>Size</b></td><td><b>:</b></td><td>{{ page.size }}</td></tr>
-
-<tr><td><b>Year</b></td><td><b>:</b></td><td>{{ page.year }}</td></tr>
-
-<tr><td><b>Updated on</b></td><td><b>:</b></td><td>{{ page.date }}</td></tr>
-
   
-</tbody></table></div></div>
- <div class="line">Download</div>
   
-<div class="f" title="{{ page.title }}"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg==" alt="{{ page.title }}"> 
-<a href="{{ page.link1 }}">Download Server 1</a></div>
   
-  <div class="f" title="{{ page.title }}"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABq0lEQVQ4jcWTu4oUQRSGv+rtbVqZGRYU0UUNTJzdXEXYTEMTn8DEVxADAzHcJ9BMMDQUzEQMfAAvmaLBiuiul+2e23ZXV53foMeZNjFZwUqqKM7/nf+cU+UkcZiVHEr9LwApwLunF17ng81N57o8UY8/7MRQXAaqP1QOgNn5a29DCuCUDM9sPUydc6BWjHOE6vu53Vf3PnW7tJINTLHZm3x5fgt4nAIQVGE+q7/eJ/oVSAY41ydfv8L6xe0MCTCQAcIlvZPvn2zdXQIal8g80WfIhB3s0Ex3mey9YDU/BWrAPFIAAv3h7QzZ2UUPcMotHOBnID+lGY/oD2+QH9uYF/zbgVoH6RrEJF0CmoT0yAnWNm4uAoVh/jOheIZiiUKJwgjFCfnpO1CLDkCmWGGzN21wHKNQYM0+iiWEYn4/QnEKqqHpjJEaZAFrvrWZYolCMT/vzzOPFgApQN0FeJkjovBzLiyWtmOJwngptqotM3QA8laE2Y+jzSTrYf1EWgXrg46jWAMeJe3ukkisKuTNLwFVvf3xwfVLiKs4en99uwLcS4/pUTvA//0bfwGJsxx8e5XIkwAAAABJRU5ErkJggg==" alt="{{ page.title }}"> 
-<a href="{{ page.link2 }}">Download Server 2</a></div>
-  
-	
-	  <div class="line">DMCA</div>
-
-     <font color="red">
-	     We don't share any download links of new movies or upcoming films and any other medias. This is clone website of isaimini and it's just for $. Don't share website links because no download links for movies in this entire site.
-	     </font>
-  <div class="line">Tags</div>
-  
-  <div class="Tag">
-    <font color="green">
-     <ul>
-      <li>{{ page.seotitle }} Movie Download isaimini</li>
-      <li>{{ page.seotitle }} Movie Download tamilrockers</li>
-       <li>{{ page.seotitle }} Movie Download tamilgun</li>
-       <li>{{ page.seotitle }} Movie Download tamilmv</li>
-       <li>{{ page.seotitle }} Movie Download isaiminiweb</li>
-       <li>{{ page.seotitle }} Movie Download isaiminida</li>
-       <li>{{ page.seotitle }} Movie Download isaiminipa</li>
-       <li>{{ page.seotitle }} Movie Download tamildbox</li>
-       <li>{{ page.seotitle }} Movie Download moviesdaweb</li>
-       <li>{{ page.seotitle }} Movie Download moviesda</li>
-       <li>{{ page.seotitle }} Movie Download marina rockers</li>
-       <li>{{ page.seotitle }} Movie Download sri rockers</li>
-       <li>{{ page.seotitle }} Movie Download kuttymovies</li>
-       <li>{{ page.seotitle }} Movie Download cooltamil</li>
-       <li>{{ page.seotitle }} Movie Download Youtube</li>
-       <li>{{ page.seotitle }} Movie Download Disney+ Hotstar</li>
-       <li>{{ page.seotitle }} Movie Download Netflix</li>
-       <li>{{ page.seotitle }} Movie Download Amazon Prime Video</li>
-       <li>{{ page.seotitle }} Movie Download ZEE5</li>
-       <li>{{ page.seotitle }} Movie Download ALT Balaji</li>
-       <li>{{ page.seotitle }} Movie Download MX Player</li>
-       <li>{{ page.seotitle }} Movie Download Hungama</li>
-       <li>{{ page.seotitle }} Movie Download BIGFlix</li>
-       <li>{{ page.seotitle }} Movie Download TnMoviez</li>
-       <li>{{ page.seotitle }} Movie Download isaidub</li>
-       <li>{{ page.seotitle }} Movie Download orutamil</li>
-       <li>{{ page.seotitle }} Movie Download in Tamil</li>
-       <li>{{ page.seotitle }} Movie Download in Hindi</li>
-       <li>{{ page.seotitle }} Movie Download in Telugu</li>
-       <li>{{ page.seotitle }} Movie Download in Malayalam</li>
-       <li>{{ page.seotitle }} Movie Download in Kannada</li>
-       <li>{{ page.seotitle }} Movie Download in English</li>
-       <li>{{ page.seotitle }} Movie Download telegram</li>
-       <li>{{ page.seotitle }} Movie Download telegram link</li>
-       <li>{{ page.seotitle }} Movie Download isaiminimob</li>
-       <li>{{ page.seotitle }} Movie Download tamilblasters</li>
-       <li>{{ page.seotitle }} Movie Download tamilplay</li>
-       <li>{{ page.seotitle }} Movie Download jiorockers</li>
-       <li>{{ page.seotitle }} Movie Download movierulz</li>
-       <li>{{ page.seotitle }} Movie Download kotha movies</li>
-      </ul>
-    </font></div>
-  {% include bottom.html %}
-  <div class="line"> © {{ site.name }}<br>All Right
-Reserved</div>
-  <script type='text/javascript'>
-//<![CDATA[
-var setting = {
-exceptionurl : "google.com,twitter.com",
-path : "#?o="
-};
-//]]>
-</script>
-<script src='https://raw.githack.com/mghifariarfan/linkpunyaku/master/auto.js'></script>
-<script src='https://www.blogger.com/feeds/8610759527942802422/posts/default?alt=json-in-script&max-results=150&callback=showurl'></script>
-	<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3850950,document.body||document.documentElement)</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179466109-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-179466109-1');
-</script>
-	
-</body>
-</html>
+      </div>
+    </section>  {% include sidebar.html %}</div>
+    
+    {% include footer.html %}

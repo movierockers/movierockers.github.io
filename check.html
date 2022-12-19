@@ -1,0 +1,105 @@
+---
+title: Helo
+layout: null
+---
+<title>Movies Data Availabilty Checker</title>
+<style>
+    body {padding: 0; margin:0 auto; max-width: 750px; font-family: 'Inter', 'Noto Sans Tamil', sans-serif; background: #f9f9f9; font-size: 14px;}
+
+    table.greyGridTable {
+  border: 2px solid #FFFFFF;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+table.greyGridTable td, table.greyGridTable th {
+  border: 1px solid #FFFFFF;
+  padding: 3px 4px;
+}
+table.greyGridTable tbody td {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  border: solid 1px black;
+ 
+}
+table.greyGridTable td:nth-child(even) {
+  color: rgb(0, 0, 0);
+}
+table.greyGridTable thead {
+  background: #FFFFFF;
+  border-bottom: 4px solid #333333;
+}
+table.greyGridTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  border-left: 2px solid #333333;
+}
+table.greyGridTable thead th:first-child {
+  border-left: none;
+}
+
+table.greyGridTable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  border-top: 4px solid #333333;
+}
+table.greyGridTable tfoot td {
+  font-size: 14px;
+}
+    </style>
+<body>
+<table class="greyGridTable">
+    <thead>
+    <tr>
+    <th>Movie Name</th>
+    <th>Language</th>
+    <th>Poster</th>
+    <th>Download link</th>
+    <th>Torrent</th>
+    <th>Last Updated</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+
+        {% for post in site.posts %}  
+        
+     
+
+    <tr>
+    <td><a itemprop="url" href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="{{post.title}} movie  Download">{{ post.title }} ({{ post.year }}) </a></td>
+    <td><a itemprop="url" href="{{ site.url }}/browse-by-language/{{ post.language | slugify }}" rel="bookmark" title="{{post.language}} movie  Download">{{ post.language }}</a></td>
+
+    {% if post.poster %}
+    <td style=" background: rgb(0, 158, 26); ">Yes</td>
+  {% else %}
+  <td style=" background: rgb(196, 0, 0); ">No</td>
+  {% endif %}
+
+  
+
+  {% if post.dlink %}
+  <td style=" background: rgb(0, 158, 26); ">Yes</td>
+  {% else %}
+  <td style=" background: rgb(196, 0, 0); ">No</td>
+  {% endif %}
+ 
+          
+  {% for item in post.dlink limit:1 %}
+    {% if item.torrent %}
+    <td style=" background: rgb(0, 158, 26); ">Yes</td>
+    {% else %}
+    <td style=" background: rgb(196, 0, 0); ">No</td>
+    {% endif %}
+    {% endfor %}
+    <td>{{ post.date | date:  '%b %d, %Y' }}</td>
+    </tr>
+    
+      {% endfor %}
+    </tbody>
+    </table>
+    </body>

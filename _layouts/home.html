@@ -1,108 +1,25 @@
----
-layout: main
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="HkgS3c8YzlO5DcLvP9IO5w5PDecVmZM3aN0r8wscXvA" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moviesda</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Moviesda" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Moviesda Tamil Movies Download Moviesda 2023 Movies Download" />
+<meta property="og:description" content="Moviesda Tamil Movies Download Moviesda 2023 Movies Download" />
+<link rel="canonical" href="{{site.url}}" />
+<meta property="og:url" content="/" />
+<meta property="og:site_name" content="Moviesda" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Moviesda" />
+    {% include custom-css.html %}
+    </head>
+    <body>
+{% include header.html %}
 
-{% if site.paginate %}
-    {% assign posts = paginator.posts | where_exp:"post","post.is_generated != true" %}
-{% else %}
-    {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
-{% endif %}
 
-{% if site.show_hero and paginator == nil or paginator.page == 1 %}
-    {% assign offset = 1 %}
-{% else %}
-    {% assign offset = 0 %}
-{% endif %}
-
-<main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
-    {% if site.show_hero and paginator == nil or paginator.page == 1 %}
-        <!-- Hero -->
-        {% assign featured = posts.first %}
-        <section class="hero" style="background-image: url({{ featured.poster }})">
-            <div class="pixels"></div>
-            <div class="gradient"></div>
-            <div class="content">
-                <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
-                    {% if site.date_format == nil %}
-                        {{ featured.date | date: "%m.%d.%Y" }}
-                    {% else %}
-                        {{ featured.date | date: site.date_format }}
-                    {% endif %}
-                </time>
-                <h1 class="title">{{ featured.title }}</h1>
-                <p class="description">{{ featured.subtitle }}</p>
-                <div class="buttons">
-                    <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
-                        
-<svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><circle cx="256" cy="256" fill="#ff6b6b" r="256"/><path d="m512 256h-512c0 141.385 114.615 256 256 256s256-114.615 256-256z" fill="#ff1f3d"/><g><g><path d="m185.999 401c-2.333 0-4.673-.543-6.827-1.645-5.016-2.564-8.172-7.722-8.172-13.355v-260c0-5.633 3.156-10.791 8.171-13.355s11.044-2.103 15.611 1.195l180 130c3.905 2.82 6.218 7.344 6.218 12.16s-2.313 9.34-6.218 12.16l-180 130c-2.605 1.882-5.686 2.84-8.783 2.84z" fill="#f9f9f9"/></g></g><g><path d="m171 256v130c0 5.633 3.156 10.791 8.171 13.355 2.154 1.102 4.495 1.645 6.827 1.645 3.097 0 6.179-.958 8.784-2.84l180-130c3.904-2.82 6.218-7.344 6.218-12.16z" fill="#e2dff4"/></g></g></svg>
-                        <span>{{ site.translations.button.read_now | default: "Watch Now" }}</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-    {% endif %}
-    <!-- Posts -->
-    <section id="grid" class="row flex-grid">
-        {% for post in posts offset: offset %}
-            <article class="box-item">
-                
-                <div class="box-body">
-                    <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
-                        {% include loader.html %}
-                        {% if post.poster %}
-                            <img style="border-radius: 10px 10px 0px 0px;" src="/assets/img/placeholder.png" width="100%" data-url="{{ post.poster }}" class="preload">
-                            <noscript>
-                                <img style="border-radius: 10px 10px 0px 0px;" src="{{ post.poster }}" width="100%">
-                            </noscript>
-                        {% elsif post.poster %}
-                            <img style="border-radius: 10px 10px 0px 0px;" src="/assets/img/placeholder.png" width="100%" data-url="{{ post.poster }}" class="preload">
-                            <noscript>
-                                <img style="border-radius: 10px 10px 0px 0px;" src="{{ post.poster }}" width="100%">
-                            </noscript>
-                        {% else %}
-                            <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
-                            <noscript>
-                                <img src="/assets/img/off.jpg" width="100%">
-                            </noscript>
-                        {% endif %}
-                        {% include new-post-tag.html date=post.date %}
-                        {% include read-icon.html %}
-                    </a>
-                    <div class="box-info" style=" border-radius: 0px 0px 10px 10px; background: black; ">
-                        
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                            <h2 class="post-titcle" style="font-size: 20px;text-transform: capitalize;font-family: unset;font-weight: 500;">
-                                {{ post.title }}
-                            </h2>
-                        </a>
-                    </div>
-                </div>
-            </article>
-        {% endfor %}
-    </section>
-    <!-- Pagination -->
-    {% if site.paginate %}
-        {% include pagination-home.html %}
-    {% endif %}
-</main>
-
-{% assign social_urls = '' %}
-{% if site.github_username %}
-    {% assign social_urls = social_urls | append: '"https://github.com/' | append: site.github_username | append: '",' %}
-{% endif %}
-{% if site.facebook_username %}
-    {% assign social_urls = social_urls | append: '"https://www.facebook.com/' | append: site.facebook_username | append: '",' %}
-{% endif %}
-{% if site.twitter_username %}
-    {% assign social_urls = social_urls | append: '"https://twitter.com/' | append: site.twitter_username | append: '",' %}
-{% endif %}
-{% if site.medium_username %}
-    {% assign social_urls = social_urls | append: '"https://medium.com/@' | append: site.medium_username | append: '",' %}
-{% endif %}
-{% if site.instagram_username %}
-    {% assign social_urls = social_urls | append: '"https://www.instagram.com/' | append: site.instagram_username | append: '",' %}
-{% endif %}
-{% if site.linkedin_username %}
-    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/in/' | append: site.linkedin_username | append: '",' %}
-{% endif %}
-
+{% include recenthome.html %}
+{% include footer.html %}
