@@ -65,13 +65,13 @@ defaults:
       type: year
     values:
       layout: year
-      permalink: /browse-by-year/:title.html
+      permalink: /year/:title
   - scope:
       path: ''          # An empty string here means all files in the project
       type: language
     values:
       layout: language
-      permalink: /browse-by-language/:title.html
+      permalink: /language/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.
